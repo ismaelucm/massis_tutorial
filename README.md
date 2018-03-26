@@ -1,6 +1,11 @@
 # massis3-4
 ## Compile
-Compiling for development:
+It is assumed massis3 is installed.  If not
+	
+	git clone git@bitbucket.org:marlonca/massis3-4.git
+
+And then, compiling for development:
+
 	mvn compile install
 
 Warning: When you do git clone from the repository, you must add the file
@@ -172,6 +177,18 @@ where:
 
 * behaviorName: is the name of the behavior
 
+
+To get the camera ids available in the simulation
+
+	http://localhost:60000/api/simulations/0/environment/cameraIds
+
+URL to access the simulation via a dashboard. The user is presented a div with all available cameras
+
+	http://localhost:60000/api/simulations/0/environment/cameraweb
+
+Streaming the video of the simulation in MJPEG of a particular camera
+
+	http://localhost:60000/api/simulations/0/environment/camera/0/video
 
 
 Trouble shooting
