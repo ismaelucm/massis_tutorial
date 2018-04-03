@@ -41,7 +41,7 @@ public class LaunchServer
             //configure deault args
             args = new String[2];
             args[0] = "-f";
-            args[1] = "EvacuationWithVariableSpeed.lua";
+            args[1] = "src/main/resources/simulationExamples/EvacuationWithVariableSpeed.lua";
             //args[1] = "SuspectBehaviorExample.lua";
             //args[0] = "-s";
             //args[1] = "Faculty_1floor";
