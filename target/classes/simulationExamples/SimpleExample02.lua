@@ -4,7 +4,7 @@
 Scenario={
 	CameraConfig = {
 		location={85.0, 100.0, 54.0},
-		rotation={0.0,0.0,0.0},
+		rotation={90.0,0.0,0.0},
 		lookAt={85.0, 0.0, 54.0}
 	},
 	AgentsDescriptions={

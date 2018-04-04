@@ -6,7 +6,7 @@
 Scenario={
 	CameraConfig = {
 		location={61.0, 100.0, 40.0},
-		rotation={0.0,0.0,0.0},
+		rotation={90.0,0.0,0.0},
 		lookAt={61.0, 0.0, 40.0}
 	},
 	AgentsDescriptions={
