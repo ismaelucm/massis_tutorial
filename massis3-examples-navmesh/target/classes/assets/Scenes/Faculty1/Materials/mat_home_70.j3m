@@ -1,0 +1,20 @@
+Material luz_lamp : Common/MatDefs/Light/Lighting.j3md {
+
+    Transparent On
+
+    MaterialParameters {
+      Diffuse : 0.64 0.64 0.64 0.929269
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0 0.0 0.0 1.0
+      BackfaceShadows : false
+      AlphaDiscardThreshold : 0.01
+      Specular : 0.001 0.001 0.001 1.0
+      Shininess : 35.294117
+    }
+
+    AdditionalRenderState {
+      PointSprite On
+      Blend Alpha
+    }
+}

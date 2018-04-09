@@ -1,0 +1,14 @@
+Material _SMID_wall2_1_EMID__15 : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 1.0 1.0 1.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.2 0.2 0.2 1.0
+      BackfaceShadows : false
+      DiffuseMap : Flip WrapRepeat_S WrapRepeat_T MinTrilinear "Scenes/Faculty_2floors/Materials/m_diffuseMap_9_Home__SMID_wall2_1_EMID__15.png"
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 16.0
+    }
+
+}

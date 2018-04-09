@@ -1,0 +1,13 @@
+Material _SMID_wall1845_2_EMID__13450 : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 1.0 1.0 1.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.2 0.2 0.2 1.0
+      BackfaceShadows : false
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 16.0
+    }
+
+}

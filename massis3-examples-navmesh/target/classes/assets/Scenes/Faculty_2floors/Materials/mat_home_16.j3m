@@ -1,0 +1,13 @@
+Material WOOD : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.667 0.489 0.291 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.286 0.209 0.125 1.0
+      BackfaceShadows : false
+      Specular : 0.1 0.1 0.1 1.0
+      Shininess : 16.0
+    }
+
+}

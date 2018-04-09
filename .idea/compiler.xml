@@ -6,13 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="examples.navmesh" />
+        <module name="examples.server" />
         <module name="massis3-4-navmesh_test" />
-        <module name="massis3-examples" />
+        <module name="massis3-examples-navmesh" />
+        <module name="massis3-examples-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="examples.navmesh" target="1.8" />
+      <module name="examples.server" target="1.8" />
       <module name="massis3-4-navmesh_test" target="1.8" />
       <module name="massis3-examples" target="1.8" />
+      <module name="massis3-examples-navmesh" target="1.8" />
+      <module name="massis3-examples-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,13 @@
+Material tan : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.6612 0.5221 0.2186 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.4 0.3121 0.1202 1.0
+      BackfaceShadows : false
+      Specular : 0.502 0.4118 0.2152 1.0
+      Shininess : 60.0
+    }
+
+}

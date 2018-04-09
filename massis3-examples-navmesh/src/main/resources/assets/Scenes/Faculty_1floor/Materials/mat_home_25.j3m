@@ -1,0 +1,14 @@
+Material cover : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 1.0 1.0 1.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0 0.0 0.0 1.0
+      BackfaceShadows : false
+      DiffuseMap : Flip WrapRepeat_S WrapRepeat_T MinTrilinear "Scenes/Faculty_1floor/Materials/m_diffuseMap_25_BienProgrammerEnJava7.jpg"
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 16.0
+    }
+
+}

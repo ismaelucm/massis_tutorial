@@ -1,0 +1,14 @@
+Material _SMID_room126_1_EMID__5728 : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 1.0 1.0 1.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.2 0.2 0.2 1.0
+      BackfaceShadows : false
+      DiffuseMap : Flip WrapRepeat_S WrapRepeat_T MinTrilinear "Scenes/Faculty_2floors/Materials/m_diffuseMap_5_Home__SMID_room126_1_EMID__5728.png"
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 16.0
+    }
+
+}

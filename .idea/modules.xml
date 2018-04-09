@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/massis3-4-navmesh_test.iml" filepath="$PROJECT_DIR$/massis3-4-navmesh_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/massis3-examples-server/examples.server.iml" filepath="$PROJECT_DIR$/massis3-examples-server/examples.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-examples.iml" filepath="$PROJECT_DIR$/massis3-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/massis3-examples-navmesh/massis3-examples-navmesh.iml" filepath="$PROJECT_DIR$/massis3-examples-navmesh/massis3-examples-navmesh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/massis3-examples-server/massis3-examples-server.iml" filepath="$PROJECT_DIR$/massis3-examples-server/massis3-examples-server.iml" />
     </modules>
   </component>
 </project>

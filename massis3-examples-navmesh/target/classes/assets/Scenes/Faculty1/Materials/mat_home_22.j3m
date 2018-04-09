@@ -1,0 +1,14 @@
+Material hetrenoir : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 1.0 1.0 1.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.2 0.2 0.2 1.0
+      BackfaceShadows : false
+      DiffuseMap : Flip WrapRepeat_S WrapRepeat_T MinTrilinear "Scenes/Faculty1/Materials/m_diffuseMap_22_28.png"
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 103.0
+    }
+
+}

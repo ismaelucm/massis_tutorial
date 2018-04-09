@@ -1,0 +1,13 @@
+Material Gris : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.89 0.89 0.89 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0 0.0 0.0 1.0
+      BackfaceShadows : false
+      Specular : 0.1 0.1 0.1 1.0
+      Shininess : 62.0
+    }
+
+}

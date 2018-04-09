@@ -1,0 +1,20 @@
+Material 1 : Common/MatDefs/Light/Lighting.j3md {
+
+    Transparent On
+
+    MaterialParameters {
+      Diffuse : 0.0 0.0 0.0 0.39999998
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0 0.0 0.0 1.0
+      BackfaceShadows : false
+      AlphaDiscardThreshold : 0.01
+      Specular : 1.0 1.0 1.0 1.0
+      Shininess : 70.0
+    }
+
+    AdditionalRenderState {
+      PointSprite On
+      Blend Alpha
+    }
+}

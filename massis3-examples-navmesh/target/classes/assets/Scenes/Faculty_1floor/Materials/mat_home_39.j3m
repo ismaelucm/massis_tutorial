@@ -1,0 +1,13 @@
+Material 5 : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.894118 0.819608 0.72549 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0313726 0.0196078 0.0 1.0
+      BackfaceShadows : false
+      Specular : 0.839216 0.717647 0.717647 1.0
+      Shininess : 66.0
+    }
+
+}

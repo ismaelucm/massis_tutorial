@@ -1,0 +1,13 @@
+Material amber : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.5755 0.2678 0.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0531 0.0531 0.0531 1.0
+      BackfaceShadows : false
+      Specular : 0.3 0.3 0.3 1.0
+      Shininess : 60.0
+    }
+
+}

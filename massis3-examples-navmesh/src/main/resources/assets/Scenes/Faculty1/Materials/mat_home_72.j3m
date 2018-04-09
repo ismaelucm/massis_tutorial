@@ -1,0 +1,13 @@
+Material plasticnegret : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.135129 0.13539 0.129681 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.0 0.0 0.0 1.0
+      BackfaceShadows : false
+      Specular : 0.147504 0.147504 0.147504 1.0
+      Shininess : 78.43137
+    }
+
+}

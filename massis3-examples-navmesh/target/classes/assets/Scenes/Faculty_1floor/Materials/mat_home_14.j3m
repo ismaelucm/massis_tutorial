@@ -1,0 +1,13 @@
+Material FABRIC_DYELLOW : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.7 0.631 0.0 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.3 0.271 0.0 1.0
+      BackfaceShadows : false
+      Specular : 1.0 1.0 1.0 1.0
+      Shininess : 1.0
+    }
+
+}

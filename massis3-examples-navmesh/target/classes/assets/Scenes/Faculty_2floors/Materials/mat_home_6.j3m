@@ -1,0 +1,13 @@
+Material _SMID_room127_1_EMID__5729 : Common/MatDefs/Light/Lighting.j3md {
+
+    MaterialParameters {
+      Diffuse : 0.25882354 0.25882354 0.25882354 1.0
+      UseMaterialColors : true
+      ParallaxHeight : 0.05
+      Ambient : 0.25882354 0.25882354 0.25882354 1.0
+      BackfaceShadows : false
+      Specular : 0.0 0.0 0.0 1.0
+      Shininess : 16.0
+    }
+
+}
