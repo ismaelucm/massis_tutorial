@@ -10,6 +10,10 @@ Scenario={
 		rotation={90.0,0.0,0.0},
 		lookAt={0.0,0.0,0.0}
 	},
+	VideoConfig={
+		filename="prueba.mp4",
+		cameraId="0",
+	},
 	AgentsDescriptions={
 		Class1={
 			behavior="FollowingPathWithSpeed",

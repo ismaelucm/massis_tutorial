@@ -10,6 +10,11 @@ Scenario={
 		rotation={90.0,0.0,0.0},
 		lookAt={0.0,0.0,0.0}
 	},
+	VideoConfig={
+		filename="videotest.flv",
+		cameraId="0",
+		duration=100.0,
+	},
 	AgentsDescriptions={
 		Class1={
 			behavior="FollowingPathWithSpeed",
