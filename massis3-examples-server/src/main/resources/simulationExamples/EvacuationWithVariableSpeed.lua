@@ -6,9 +6,9 @@
 
 Scenario={
 	CameraConfig = {
-		location={33.0, 165.0, 54.0},
+		location={85.87224, 59.912987, 51.260212},
 		rotation={90.0,0.0,0.0},
-		lookAt={0.0,0.0,0.0}
+		lookAt={0.0, -0.9999996, 0}
 	},
 	VideoConfig={
 		filename="videotest.flv",
