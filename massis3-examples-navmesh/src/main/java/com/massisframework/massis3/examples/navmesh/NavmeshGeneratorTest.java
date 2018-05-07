@@ -25,6 +25,9 @@ public class NavmeshGeneratorTest extends SimpleApplication{
         //JmeSystem.setLowPermissions(true);;
         //this.assetManager.registerLocator("/home/mosi-agil/Documentos/mosi-agil/massis3-4-examples/massis3-examples-navmesh/assets/",ClasspathLocator.class);
         this.getFlyByCamera().setMoveSpeed(20f);
+        this.getFlyByCamera().setEnabled(true);// to avoid mouse capture
+        this.getInputManager().setCursorVisible(true);
+        
         this.getCamera().setLocation(new Vector3f(0, 100, 0));
         this.getCamera().lookAt(Vector3f.ZERO,Vector3f.UNIT_Y);
         _light = new LightingConfiguration(this.getRootNode(),new Vector3f(-0.3f, -0.5f, -0.2f),ColorRGBA.DarkGray);

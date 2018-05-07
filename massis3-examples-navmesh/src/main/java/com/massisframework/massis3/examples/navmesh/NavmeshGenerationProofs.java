@@ -14,8 +14,11 @@ public class NavmeshGenerationProofs
 
         final NavmeshGeneratorTest navmesh = new NavmeshGeneratorTest();
         final AppSettings settings = new AppSettings(true);// vrAppState.getSettings();
+        settings.setAudioRenderer(null); // to avoid failures when audio is not present
+      
         navmesh.setSettings(settings);
         navmesh.setShowSettings(false);
+
         navmesh.start();
     }
 }

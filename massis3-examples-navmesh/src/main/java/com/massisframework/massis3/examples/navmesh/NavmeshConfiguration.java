@@ -35,14 +35,12 @@ public class NavmeshConfiguration
 
         Node resourceNode = (Node) _assetManager.loadModel(assetName);
 
-
-
-
-
         _navMeshController = new NavMeshController(resourceNode);
-        _navMesh = _navMeshController.generateNavMesh(0.1f, 0.5f, 0.5f,
-                0.25f, 48f, true, 0.3f, 5f, true, 4, 8, 10f, 0.75f, 4, 25f,
-                0.1f, 100f,5,true);
+        _navMesh = _navMeshController.generateNavMesh(
+        		0.1f, 0.5f, 0.5f,
+                0.25f, 48f, true, 0.3f, 5f, true, 
+                4, 8, 10f, 0.75f, 4, 25f,
+                0.1f, 15f,8,true);
         Geometry navGeom = new Geometry("NavMesh", _navMesh);
         Geometry navMeshVertex = new Geometry("NavMeshVertex", _navMesh);
 
