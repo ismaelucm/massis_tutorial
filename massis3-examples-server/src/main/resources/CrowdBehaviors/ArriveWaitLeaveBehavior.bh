@@ -1,0 +1,39 @@
+Behavior={
+    Name="RunAway",
+    Type="FSM",
+    Blackboard={
+    },
+    States={
+        State0={
+            Action="NextPathPointAgent",
+            Initial=true,
+        },
+        State1={
+            Action="MoveToAgent",
+        }
+    },
+    Transitions={
+        {
+         From="State0",
+         When="ActionFinish",
+         To="State1"
+        }
+    }
+}
+
+Parameters={
+                Inputs={
+                    Path="Blackboard.Path",
+                    Circular="Blackboard.IsCircularPath"
+                },
+                Outputs={
+                    FinalPosition="Blackboard.Target"
+                }
+            }
+
+                        Parameters={
+                            Inputs={
+                                Target="Blackboard.Target",
+                                Animation="walk1"
+                            }
+                        }
