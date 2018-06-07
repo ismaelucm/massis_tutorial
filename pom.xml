@@ -12,7 +12,6 @@
     <modules>
         <module>massis3-examples-server</module>
         <module>massis3-examples-navmesh</module>
-        <module>massis3-examples-genetic</module>
         <module>massis3-examples-utils</module>
     </modules>
     <build>

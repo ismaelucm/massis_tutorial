@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/massis3-examples-server/examples.server.iml" filepath="$PROJECT_DIR$/massis3-examples-server/examples.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-4-examples-genetic.iml" filepath="$PROJECT_DIR$/massis3-4-examples-genetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-examples.iml" filepath="$PROJECT_DIR$/massis3-examples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/massis3-examples-genetic/massis3-examples-genetic.iml" filepath="$PROJECT_DIR$/massis3-examples-genetic/massis3-examples-genetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-examples-navmesh/massis3-examples-navmesh.iml" filepath="$PROJECT_DIR$/massis3-examples-navmesh/massis3-examples-navmesh.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-examples-server/massis3-examples-server.iml" filepath="$PROJECT_DIR$/massis3-examples-server/massis3-examples-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/massis3-examples-utils/massis3-examples-utils.iml" filepath="$PROJECT_DIR$/massis3-examples-utils/massis3-examples-utils.iml" />

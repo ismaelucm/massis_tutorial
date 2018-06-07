@@ -58,11 +58,11 @@ public class LaunchServer {
         if (args.length == 0) {
             //configure deault args
             args = new String[2];
-            args[0] = "-s";
-            args[1] = "EnterToClassFaculty_1floor";
+            //args[0] = "-s";
+            //args[1] = "EnterToClassFaculty_1floor";
             // Si queremos crear pruebas rápidas, descomentar...
-            //args[0] = "-f";
-            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua";
+            args[0] = "-f";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua";
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";

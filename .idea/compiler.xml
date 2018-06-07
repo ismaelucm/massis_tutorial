@@ -9,7 +9,6 @@
         <module name="examples.navmesh" />
         <module name="examples.server" />
         <module name="massis3-4-navmesh_test" />
-        <module name="massis3-examples-genetic" />
         <module name="massis3-examples-navmesh" />
         <module name="massis3-examples-server" />
         <module name="massis3-examples-utils" />
