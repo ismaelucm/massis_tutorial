@@ -10,8 +10,7 @@ public final class LancherDefs {
     public static final String HELP = "-h";
     public static final String ASSETS_PATH = "assets";
 
-    private LancherDefs()
-    {
+    private LancherDefs() {
 
     }
 }

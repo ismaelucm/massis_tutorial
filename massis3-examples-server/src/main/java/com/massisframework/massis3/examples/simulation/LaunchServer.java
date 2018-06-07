@@ -3,12 +3,14 @@ package com.massisframework.massis3.examples.simulation;
 import com.massisframework.massis3.CommandLineConfig;
 import com.massisframework.massis3.CommandLineInfo;
 import com.massisframework.massis3.FileHelpper;
-import com.massisframework.massis3.examples.configuration.Configuration;
-import com.massisframework.massis3.core.BehaviorPrimitives.MassisBehaviorManager;
-import com.massisframework.massis3.core.config.*;
-import com.massisframework.massis3.examples.simulation.SimulationDescriptions.PreconfiguredSimulation;
 import com.massisframework.massis3.LUA.LuaParser;
+import com.massisframework.massis3.core.BehaviorPrimitives.MassisBehaviorManager;
+import com.massisframework.massis3.core.config.BehaviorDef;
+import com.massisframework.massis3.core.config.HttpServerConfig;
+import com.massisframework.massis3.core.config.SimulationServerConfig;
+import com.massisframework.massis3.examples.simulation.SimulationDescriptions.PreconfiguredSimulation;
 import com.massisframework.massis3.examples.simulation.SimulationDescriptions.SimulationDescriptionHelper.SimulationByFile;
+import com.massisframework.massis3.examples.utils.Configuration;
 import com.massisframework.massis3.services.eventbus.Massis3ServiceUtils;
 import com.massisframework.massis3.services.eventbus.SimulationServerService;
 import com.massisframework.massis3.simulation.server.SimulationServerLauncher;
@@ -23,54 +25,72 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class LaunchServer
-{
-    public enum FIleType {XML,JSON,LUA}
+public class LaunchServer {
+
+    public enum FIleType {XML, JSON, LUA}
+
     private static final Logger log = LoggerFactory.getLogger(LaunchServer.class);
     private static final String BEHAVIORS_PATH = "/CrowdBehaviors/";
+    private static final String SIMULATION_EXAMPLES_PATH = "massis3-examples-server/src/main/resources/simulationExamples/";
 
-    public static void main(String[] args) throws Exception
-    {
+
+    public static void main(String[] args) throws Exception {
+        String currentPath = java.nio.file.Paths.get(".").toAbsolutePath().normalize().toString();
+        System.out.println("MASSIS SERVER WORKING PATH"+currentPath);
         processBehavior(BEHAVIORS_PATH);
         System.out.println("");
         System.out.println("MASSIS LaunchServer start");
         System.out.println("=========================");
         System.out.println("");
-        if(args.length == 0)
-        {
+        if (args.length == 0) {
             //configure deault args
             args = new String[2];
-            args[0] = "-f";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/EvacuationWithVariableSpeed.lua";
-            ///home/mosi-agil/Documentos/mosi-agil/massis3-4-examples/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua
+            args[0] = "-s";
+            args[1] = "EnterToClassFaculty_1floor";
+            // Si queremos crear pruebas rápidas, descomentar...
+            //args[0] = "-f";
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua";
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
+
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua";
             //args[1] = "SuspectBehaviorExample.lua";
-            //args[0] = "-s";
-            //args[1] = "Faculty_1floor";
+
+        }
+        else{
+            for(int i = 0; i < args.length; ++i)
+            {
+                if(args[i].compareTo("-f") == 0)
+                {
+                    args[i+1] = SIMULATION_EXAMPLES_PATH+args[i+1];
+                }
+                //massis3-examples-server/src/main/resources/simulationExamples/
+            }
         }
 
+
         CommandLineInfo[] clInfo = {
-                new CommandLineInfo<String>(LancherDefs.HELP,"Help: Show the help",null),
-                new CommandLineInfo<String>(LancherDefs.IP,"IP: The server IP", "<IP>", Configuration.instance().getHost()),
-                new CommandLineInfo<Integer>(LancherDefs.PORT,"Port: The server port", "<PORT>", Configuration.instance().getPort()),
-                new CommandLineInfo<Integer>(LancherDefs.FILE,"File: The json where is defined the behavior of the humans in the simulation", "<json file>"),
-                new CommandLineInfo<String>(LancherDefs.SIMULATION,"Simulation: The predefined description of the simulation","<scene name>","Faculty_1floor"),
-                new CommandLineInfo<String>(LancherDefs.SIMULATION_LIST,"List of predefined simulations availables",null)
+                new CommandLineInfo<String>(LancherDefs.HELP, "Help: Show the help", null),
+                new CommandLineInfo<String>(LancherDefs.IP, "IP: The server IP", "<IP>", Configuration.instance().getHost()),
+                new CommandLineInfo<Integer>(LancherDefs.PORT, "Port: The server port", "<PORT>", Configuration.instance().getPort()),
+                new CommandLineInfo<Integer>(LancherDefs.FILE, "File: The json where is defined the behavior of the humans in the simulation", "<json file>"),
+                new CommandLineInfo<String>(LancherDefs.SIMULATION, "Simulation: The predefined description of the simulation", "<scene name>", "Faculty_1floor"),
+                new CommandLineInfo<String>(LancherDefs.SIMULATION_LIST, "List of predefined simulations availables", null)
         };
-        CommandLineConfig config = new CommandLineConfig("Massis server, Version 3.4",clInfo,"-h");
+        CommandLineConfig config = new CommandLineConfig("Massis server, Version 3.4", clInfo, "-h");
 
         //LuaParser.test();
 
-        if(config.parser(args,log)) {
+        if (config.parser(args, log)) {
 
-            if(config.isAvailable(LancherDefs.SIMULATION_LIST))
+            if (config.isAvailable(LancherDefs.SIMULATION_LIST))
                 ShowSimulationsPredefined();
-            else if(config.isAvailable(LancherDefs.SIMULATION))
+            else if (config.isAvailable(LancherDefs.SIMULATION))
                 LaunchWithScene(config);
-            else if(config.isAvailable(LancherDefs.FILE)) {
+            else if (config.isAvailable(LancherDefs.FILE)) {
                 LaunchWithFileScene(config, FIleType.LUA);
                 //execMassisLuaCode
-            }
-            else
+            } else
                 Launch(config);
         }
         System.out.println("");
@@ -80,47 +100,42 @@ public class LaunchServer
 
     }
 
-    private static void processBehavior(String behaviorPath) throws IOException
-    {
+    private static void processBehavior(String behaviorPath) throws IOException {
         List<String> allBehaviorsFile = FileHelpper.getResourceListAsStrings(behaviorPath);
-        for (String bhFile : allBehaviorsFile)
-        {
-          //  String bhFile = FileHelpper.easyReadFile(f);
+        for (String bhFile : allBehaviorsFile) {
+            //  String bhFile = FileHelpper.easyReadFile(f);
             BehaviorDef behaviorDef = LuaParser.loadBehavior(bhFile);
-            if(behaviorDef.getBehaviorType() == BehaviorDef.BehaviorType.FSM) {
+            if (behaviorDef.getBehaviorType() == BehaviorDef.BehaviorType.FSM) {
                 MassisBehaviorManager.instance().addBehavior(behaviorDef);
             }
         }
     }
 
-    public static void ShowSimulationsPredefined()
-    {
+    public static void ShowSimulationsPredefined() {
         List<String> list = PreconfiguredSimulation.getList();
         System.out.println("List of predefined simulations:");
-        for(String s : list)
-        {
+        for (String s : list) {
             System.out.println(s);
         }
     }
 
-    public static void LaunchWithScene(CommandLineConfig config) throws Exception
-    {
+    public static void LaunchWithScene(CommandLineConfig config) throws Exception {
         PreconfiguredSimulation sim = PreconfiguredSimulation.getSim(config.<String>getInfo(LancherDefs.SIMULATION).getValue());
-        LaunchScene(config,sim);
+        LaunchScene(config, sim);
     }
 
-    public static void LaunchScene(CommandLineConfig config,PreconfiguredSimulation sim) throws Exception {
+    public static void LaunchScene(CommandLineConfig config, PreconfiguredSimulation sim) throws Exception {
         String ip = config.<String>getInfo(LancherDefs.IP).getValue();
         int port = config.<Integer>getInfo(LancherDefs.PORT).getValue().intValue();
         Vertx vertx = Vertx.vertx();
         DeploymentOptions options = new DeploymentOptions();
         JsonObject configJson = new JsonObject();
-        configJson.put(LancherDefs.IP,ip);
-        configJson.put(LancherDefs.PORT,port);
-        configJson.put(LancherDefs.ASSETS_PATH,Configuration.instance().getPath());
+        configJson.put(LancherDefs.IP, ip);
+        configJson.put(LancherDefs.PORT, port);
+        configJson.put(LancherDefs.ASSETS_PATH, Configuration.instance().getPath());
 
         options.setConfig(configJson);
-        vertx.deployVerticle(sim.getClassName(),options
+        vertx.deployVerticle(sim.getClassName(), options
                 , r -> {
                     if (r.failed()) {
                         r.cause().printStackTrace();
@@ -136,52 +151,44 @@ public class LaunchServer
     }
 
 
-    public static void LaunchWithFileScene(CommandLineConfig config, FIleType filtType) throws Exception
-    {
+    public static void LaunchWithFileScene(CommandLineConfig config, FIleType filtType) throws Exception {
         String filePath = config.<String>getInfo(LancherDefs.FILE).getValue();
         String fileComplete = FileHelpper.easyReadFile(filePath);
-        if(fileComplete != null) {
+        if (fileComplete != null) {
 
-            if(filtType == FIleType.JSON)
-            {
-                LaunchWithJsonFile(fileComplete,config);
+            if (filtType == FIleType.JSON) {
+                LaunchWithJsonFile(fileComplete, config);
+            } else if (filtType == FIleType.LUA) {
+                LaunchWithLuaFile(fileComplete, config);
             }
-            else if(filtType == FIleType.LUA)
-            {
-                LaunchWithLuaFile(fileComplete,config);
-            }
-        }
-        else
-        {
-            log.error("File "+filePath+" not found ");
+        } else {
+            ;
+
+            log.error("File " + filePath + " not found");
         }
 
 
     }
 
-    protected static void LaunchWithLuaFile(String fileComplete,CommandLineConfig config) throws Exception
-    {
+    protected static void LaunchWithLuaFile(String fileComplete, CommandLineConfig config) throws Exception {
         String jsonFormat = SimulationByFile.luaToJSON(fileComplete);
-        LaunchWithJsonFile(jsonFormat,config);
+        LaunchWithJsonFile(jsonFormat, config);
     }
 
-    protected static void LaunchWithJsonFile(String fileComplete,CommandLineConfig config) throws Exception
-    {
+    protected static void LaunchWithJsonFile(String fileComplete, CommandLineConfig config) throws Exception {
         SimulationByFile.setScenarioConfiguration(fileComplete);
         SimulationByFile simByFile = new SimulationByFile();
-        LaunchScene(config,simByFile);
+        LaunchScene(config, simByFile);
     }
 
 
-
-    public static void Launch(CommandLineConfig config) throws Exception
-    {
+    public static void Launch(CommandLineConfig config) throws Exception {
         Vertx vertxServer = Vertx.vertx(); // vertexServer is an instance of vertx used to launch the web services.
         SimulationServerConfig cfg = new SimulationServerConfig()
                 .withAssetFolders(Arrays.asList(
-                        Configuration.instance().getPath()+"Scenes",
-                        Configuration.instance().getPath()+"models",
-                        Configuration.instance().getPath()+"animations"))
+                        Configuration.instance().getPath() + "Scenes",
+                        Configuration.instance().getPath() + "models",
+                        Configuration.instance().getPath() + "animations"))
                 .withHttpServerConfig(
                         new HttpServerConfig().withHost(config.<String>getInfo("-i").getValue()).withPort(config.<Integer>getInfo("-p").getValue().intValue()))
                 .withAuthPropertiesFile("classpath:webauth.properties")
@@ -193,14 +200,13 @@ public class LaunchServer
         SimulationServerLauncher.launch(vertxServer, cfg, launchFuture.completer());
     }
 
-    public static void LaunchHand() throws Exception
-    {
+    public static void LaunchHand() throws Exception {
         Vertx vertxServer = Vertx.vertx(); // vertexServer is an instance of vertx used to launch the web services.
         SimulationServerConfig cfg = new SimulationServerConfig()
                 .withAssetFolders(Arrays.asList(
-                        Configuration.instance().getPath()+"Scenes",
-                        Configuration.instance().getPath()+"models",
-                        Configuration.instance().getPath()+"animations"))
+                        Configuration.instance().getPath() + "Scenes",
+                        Configuration.instance().getPath() + "models",
+                        Configuration.instance().getPath() + "animations"))
                 .withHttpServerConfig(
                         new HttpServerConfig().withHost(Configuration.instance().getHost()).withPort(Configuration.instance().getPort()))
                 .withAuthPropertiesFile("classpath:webauth.properties")
@@ -213,8 +219,7 @@ public class LaunchServer
 
     }
 
-    private static Future<Long> createSim(Vertx vertx, String sceneFile)
-    {
+    private static Future<Long> createSim(Vertx vertx, String sceneFile) {
         SimulationServerService proxy = Massis3ServiceUtils.createProxy(
                 vertx,
                 SimulationServerService.class,

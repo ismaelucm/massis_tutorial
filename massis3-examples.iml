@@ -6,6 +6,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/massis3-examples-server/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/massis3-examples-server/src/main/java" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/massis3-examples-server/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
@@ -16,7 +17,6 @@
     <orderEntry type="library" name="Maven: org.jsonschema2pojo:jsonschema2pojo-core:0.4.34" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.javaparser:javaparser:1.0.11" level="project" />
     <orderEntry type="library" name="Maven: com.sun.codemodel:codemodel:2.6" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.moshi:moshi:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
@@ -89,6 +89,18 @@
     <orderEntry type="library" name="Maven: com.massisframework.massis3:massis3-utils:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.massisframework.massis3:behaviorframework:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.massisframework.massis3:massis3-services:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jcodec:jcodec:0.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jcodec:jcodec-javase:0.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jcodec:jcodec-streaming:0.2.3" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-all:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-i686-apple-darwin12:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-x86_64-apple-darwin12:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-i686-pc-linux-gnu6:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-x86_64-pc-linux-gnu6:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-i686-w64-mingw32:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-arch-x86_64-w64-mingw32:0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.humble:humble-video-noarch:0.2.1" level="project" />
     <orderEntry type="library" name="Maven: io.vertx:vertx-core:3.4.2" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.8.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.8.Final" level="project" />

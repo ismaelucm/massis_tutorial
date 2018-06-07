@@ -7,10 +7,8 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.Properties;
 
-public class NavmeshGenerationProofs
-{
-    public static void main (String[] args) throws Exception
-    {
+public class NavmeshGenerationProofs {
+    public static void main(String[] args) throws Exception {
 
         final NavmeshGeneratorTest navmesh = new NavmeshGeneratorTest();
         final AppSettings settings = new AppSettings(true);// vrAppState.getSettings();
