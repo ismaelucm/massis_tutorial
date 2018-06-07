@@ -4,6 +4,7 @@
 -- the population Cafeteria is evacuated using the shortes path to through the main door
 -- All they using the behavior FollowingPath
 
+<<<<<<< HEAD
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {
@@ -67,6 +68,81 @@ Scenario = {
             }
         }
     }
+=======
+Scenario={
+	CameraConfig = {
+		location={85.87224, 59.912987, 51.260212},
+		rotation={90.0,0.0,0.0},
+		lookAt={0.0, -0.9999996, 0}
+	},
+	VideoConfig={
+		filename="videotest.flv",
+		cameraId="0",
+		duration=100.0,
+	},
+	AgentsDescriptions={
+		Class1={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="ClassesLobby.Class1,LobbyEventRoom.Hall,MainHall.Entrance,MainGate",
+				SpeedPath="1.0,5.0,10.0,15.0"
+			}
+		},
+		Class2={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="ClassesLobby.Class2,ClassesLobby.Class1,LobbyEventRoom.Hall,MainHall.Entrance,MainGate",
+				SpeedPath="1.0,5.0,10.0,15.0"
+			}
+		},
+		Class3={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="ClassesLobby.Class3,ClassesLobby.Class2,ClassesLobby.Class1,MainHall.Entrance,MainGate",
+				SpeedPath="1.0,5.0,10.0,15.0"
+			}
+		},
+		Class4={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="ClassesLobby.Class4,ClassesLobby.Class5,HallBackGate.Lobby,BackGate",
+				SpeedPath="1.0,5.0,10.0"
+			}
+		},
+		Class5={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="ClassesLobby.Class5,HallBackGate.Lobby,BackGate",
+				SpeedPath="1.0,5.0,10.0"
+			}
+		},
+		Cafeteria={
+			behavior="FollowingPathWithSpeed",
+			SpeedMin=1.0,
+			SpeedMax=5.0,
+			AnimationSpeedReference=4.0,
+			RewriteParameter={
+				Path="MainGate",
+				SpeedPath="1.0"
+			}
+		}
+	}
+>>>>>>> 8b3c4138bf9e6da8276d839a7b511e6b94c7aa2f
 }
 
 Commands:
