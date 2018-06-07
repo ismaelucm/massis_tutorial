@@ -15,7 +15,7 @@ the local values of host, port and assets path.
 Example content
 
 	host_ip=127.0.0.1
-	host_port=60000
+	host_port=8080
 	host_path=**MYPATHTOMASSIS**/massis3-assets/
 
 To do this run the following command in git:
@@ -34,7 +34,7 @@ To know which simulations are available
 
 There exist two simulations predefined:
 
-* Faculty_1floor. The populatoin is defined in class DummySimulationExecutionConfigTemplate, and consists of five big groups of 25 persons, starting all of them at the same location
+* Faculty_1floor. The population is defined in class DummySimulationExecutionConfigTemplate, and consists of five big groups of 25 persons, starting all of them at the same location
 * EnterToClassFaculty_1floor is nowadays broken.
 
 To launch either of these:
@@ -190,6 +190,26 @@ Streaming the video of the simulation in MJPEG of a particular camera
 
 	http://localhost:60000/api/simulations/0/environment/camera/0/video
 
+LUA syntax
+-------------
+
+A lua file has the following syntax
+
+	 CameraConfig
+	 [VideoConfig]
+	 Agentdescription
+	 Commands
+ 
+
+The VideoConfig is
+
+	VideoConfig={
+		filename="output_video_filename_path.flv",
+		cameraId="ID of the camera (0 if don't know)",
+		duration="seconds of the simulation to record",
+	},
+
+The file with the video is coded as a flv container with H264 codec. The internal format is FLV to get wider acceptance. Due to some issues, the recorded video is still not of the same duration, but an accelerated version of the same simulation duration.
 
 Trouble shooting
 --------------------

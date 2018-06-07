@@ -1,0 +1,11 @@
+.settings
+libbulletjme.so
+.project
+target
+*/target/*
+.classpath
+bin
+.idea
+*.log
+MassisOutputs
+*.class
