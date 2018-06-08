@@ -53,30 +53,30 @@ We are going to create a behaviour that moves the agent at a location, them wait
 We are going to add 4 states to the behaviour that execute the following actions:
 
 * State0: Execute the action "NextPathPointAgent" and its the initial state of the FSM. 
-* State1: Execute the action "MoveToAgent". 
+* State1: Execute the action "MoveTo". 
 * State2: Execute the action "Wait". 
 * State3: Execute the action "RunAway". 
 
 
-```LUA
+```lua
 Behavior={
-    Name="",
+    Name="ArriveWaitLeave",
     Type="FSM",
     Blackboard={
     },
     States={
         State0={
             Action="NextPathPoint",
-            Initial=true,
+            Initial=true
         },
         State1={
-            Action="MoveTo",
+            Action="MoveTo"
         },
         State2={
-            Action="Wait",
+            Action="Wait"
         }
         State3={
-            Action="RunAway",
+            Action="RunAway"
         }
     },
     Transitions={
@@ -105,11 +105,242 @@ The actions used as explained below:
         * PlaceList: A list of the positions,  separated by commas, from the action the selects the destination of the movement.
 
 
+Now, we need to connect the input and output parameters of different actions to allow the correct data flow among them. For instances, the action *MoveTo* need the destination location of the movement. The path that the agent follows is in action *NextPathPoint* that return the next step of the path. To communicate de output value of the action *NextPathPoint* with the input parameter of the action *MoveTo* we using the behaviour's blackboard.
 
+```lua
+
+    Blackboard={
+        Inputs={
+            Target=""
+        }
+    },
+    States={
+        State0={
+            Action="NextPathPoint",
+            Initial=true,
+            Outputs={
+                FinalPosition="Blackboard.Target"
+            }
+        },
+        State1={
+            Action="MoveTo",
+            Inputs={
+                Target="Blackboard.Target",
+            }
+        },
+```
+
+
+The value of the parameter "Blackboard.Target" refers to a parameter "Target" of the blackboard. The action *NextPathPoint* write in the variable Path of the behaviour blackboard the next step of the path. The action MoveTo read the value from the Path variable and copy the vlue in its input parameter *Target*.
+
+Note that the input parameter of the action and the value of the variable on the blackboard do not have to match.
+
+*NextPathPoint* need two input parameters: Path and Circular. Path reads the values from the blackboard. Doing this, we delegate the value of the path when we use the behavior in the scenario. The variable *Circular* is False and in the action *MoveTo*, the variable Animation is "walk1"
+
+```lua
+
+    Blackboard={
+        Inputs={
+            Target="",
+            Path=""
+        }
+    },
+    States={
+        State0={
+            Action="NextPathPoint",
+            Initial=true,
+            Inputs={
+                Path="Blackboard.Path",
+                Circular=false
+            },
+            Outputs={
+                FinalPosition="Blackboard.Target"
+            }
+        },
+        State1={
+            Action="MoveTo",
+            Parameters={
+                Inputs={
+                    Target="Blackboard.Target",
+                    Animation="walk1"
+                }
+            }
+        }
+```
+
+
+The action *Wait* and *RunAway* aso read theirs inputs values from the blackboard and delegate theirs values to the instanciation of the behavior in some manner to the action *NextPAthPoint*.
+
+```LUA
+
+    Blackboard={
+        Inputs={
+            Target="",
+            Path="",
+            Time="",
+            PlaceListToRunAway=""
+        }
+    },
+    States={
+        State0={
+            Action="NextPathPoint",
+            Initial=true,
+            Parameters={
+                Inputs={
+                    Path="Blackboard.Path",
+                    Circular=false
+                },
+                Outputs={
+                    FinalPosition="Blackboard.Target"
+                }
+            }
+        },
+        State1={
+            Action="MoveTo",
+            Parameters={
+                Inputs={
+                    Target="Blackboard.Target",
+                    Animation="walk1"
+                }
+            }
+        },
+        State2={
+            Action="Wait",
+            Parameters={
+                Inputs={
+                    Time="Blackboard.Time",
+                }
+            }
+        },
+        State3={
+            Action="RunAway"
+            Parameters={
+                Inputs={
+                    PlaceList="Blackboard.PlaceListToRunAway"
+                }
+            }
+        }
+    }
+```
+
+
+And finally, we need establishing the transitions between the states. The NextPathPoint transits to MoveTo when the action is finished. MoveTo also transits to Wait when is finished and so on. The final behaviour is shown below.
+
+```LUA
+Behavior={
+    Name="ArriveWaitLeave",
+    Type="FSM",
+    Blackboard={
+        Inputs={
+            Target="",
+            Path="",
+            Time="",
+            PlaceListToRunAway=""
+        }
+    },
+    States={
+        State0={
+            Action="NextPathPoint",
+            Initial=true,
+            Inputs={
+                Path="Blackboard.Path",
+                Circular="Blackboard.IsCircularPath"
+            },
+            Outputs={
+                FinalPosition="Blackboard.Target"
+            }
+        },
+        State1={
+            Action="MoveTo",
+            Parameters={
+                Inputs={
+                    Target="Blackboard.Target",
+                    Animation="walk1"
+                }
+            }
+        },
+        State2={
+         Action="Wait",
+         Parameters={
+             Inputs={
+                 Time="Blackboard.Time",
+             }
+         }
+        },
+        State3={
+         Action="RunAway"
+         Parameters={
+             Inputs={
+                 PlaceList="Blackboard.PlaceListToRunAway"
+             }
+         }
+        }
+    },
+    Transitions={
+        {
+         From="State0",
+         When="ActionFinish",
+         To="State1"
+        },
+        {
+         From="State1",
+         When="ActionFinish",
+         To="State2"
+        },
+        {
+         From="State2",
+         When="ActionFinish",
+         To="State3"
+        },
+        {
+         From="State3",
+         When="ActionFinish",
+         To="State4"
+        }
+    }
+}
+```
 
 ## Using the behavior in a scenario
 
 
+To test the behaviour, we are going to create a new scenario using the behaviour. The scenario only has one agent that walk from the MainGate to the Classroom 1, it waits 2 seconds and leaves the faculty by one of its two exits: the main or the back one.
+
+```LUA
+Scenario = {
+    Scene="Faculty_1floor",
+    CameraConfig = {
+        location = { 70.0, 100.0, 55.0 },
+        rotation = { 90.0,0.0,0.0 },
+        lookAt = { 0.0, -1.0, 0.0 }
+    },
+    AgentsDescriptions = {
+        Agent01={
+            behavior = "ArriveWaitLeave",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class1",
+                Time=2.0,
+                PlaceListToRunAway="MainGate,BackGate"
+            }
+        }
+    }
+}
+Commands:
+MassisLua.createHuman("Agent01", 1, "MainGate")
+```
+
+Teh examples shows how configure the inputs parameters of the behavior when it is used in a scenario. The path only have one step: Agent01. The time to wait when the agent arrive at class1 is 2 seconds and the final destination of the agent, where the agent leaves the faculty, will be either the main gate or the back gate.
+
 ## Launch de scenario
+
+
+Save the scenario as testBehavior.lua and launch:
+
+```bash
+>./LaunchServer.sh -f testBehavior.lua
+```
 
 [back to main](index.md)
