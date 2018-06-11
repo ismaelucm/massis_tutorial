@@ -4,7 +4,7 @@ Welcome to the MASSIS V3 tutorial.
 
 # Description
 
-**MASSIS** is a software framework to facilitate the creation of 3D simulations in indoor environments (i.e., inside a building). This framework allows the creation of multiple agents with different behaviours. Agent behaviours can be reused for other agents  in other simulation scenarios. There are also tools to easily create  new  environments for the simulations.
+**MASSIS** is a software framework that facilitates the creation of 3D agent-based simulations in indoor environments (i.e., inside a building). It allows the specification of a large number of agents with different behaviours. Agent behaviours can be reused for other agents  in other simulation scenarios. There are also tools to easily create  new  environments for the simulations.
 
 MASSIS has been designed to keep a balance between flexibility and performance for large agent-based simulations.
 
