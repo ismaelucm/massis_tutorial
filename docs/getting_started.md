@@ -2,11 +2,11 @@
 
 [back to main](index.md)
 
-This tool has been created using maven and Java 8. To install the tool is necessary to have installed the [Java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 8 SDK and the last version of [Maven](https://maven.apache.org/) (Currently working with Apache Maven 3.3.9).
+MASSIS has been created using [Maven](https://maven.apache.org/) and [Java 8](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html). Therefore, a prerrequisite for using MASSIS is to have installed the [Java 8 SDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and the last version of [Maven](https://maven.apache.org/) (Currently working with Apache Maven 3.3.9).
 
 Maven can be installed from here: [https://maven.apache.org/install.html](https://maven.apache.org/install.html)
 
-The tool uses the [JMonkeyEngine](http://jmonkeyengine.org/) to draw the simulation in 3D. This 3D framework will be installed in the system by maven, but this framework requires that the OpenGL hardware acceleration is enabled on the system. The following command checking whether OpenGL is installed on the system:
+In its current version, MASSIS also uses the [JMonkeyEngine](http://jmonkeyengine.org/) to show the simulation in 3D. The JMonkeyEngine will be installed in the system by Maven, but it requires  the [OpenGL](https://www.opengl.org/) hardware acceleration to be enabled on the system. The following command (in Linux) checks whether OpenGL is installed on the system:
 
 
 ```bash
@@ -17,20 +17,20 @@ direct rendering: Yes
 
 ```
 
-It is advisable to have installed the ogg libraries on the system. Its absence does not prevent execution but generates a warning logs.
+It is advisable to have installed the [Ogg](https://xiph.org/ogg/) libraries on the system. Its absence does not prevent execution but generates several warning logs.
 
 ## Installation
 
-To instal the tool, you must clone the following repository:
+To install Massis,  clone the following repositories:
 
 ```bash
 > git clone XXXXXXXXX
 > git clone https://github.com/ismaelucm/massis_tutorial.git
 ```
 
-The first project is the core System and the second proyect is the examples of the proyect.
+The first project is the core Massis system and the second proyect has the examples for this tutorial.
 
-Move into massis3-4 directory and type the following commands to compile de proyect using maven.
+Move into massis3-4 directory and  compile the project using Maven:
 
 ```bash
 > cd massis3-4
@@ -38,7 +38,7 @@ Move into massis3-4 directory and type the following commands to compile de proy
 > mvn install
 ```
 
-Next change the directory to massis3-examples and type the following commands to compile de example proyect using maven.
+Next change to the directory massis3-examples and  compile de example project using Maven again:
 
 ```bash
 > cd massis3-examples
@@ -46,7 +46,7 @@ Next change the directory to massis3-examples and type the following commands to
 > mvn install
 ```
 
-Now the tool is installed in the system. To check whether everything is working properly you can change directory to massis3-examples if it is not there yet and launch the hello world simulation typing:
+Now Massis is installed in the system. To check that everything is working properly, being in the massis3-examples directory, try to  launch the ''hello world'' simulation:
 
 
 ```bash
@@ -55,6 +55,6 @@ Now the tool is installed in the system. To check whether everything is working 
 > ./LaunchServer.sh
 ```
 
-The first execution takes some minutes to begin because the system creating the navigation meshes and other assets. Wait until the process is finished.
+The first execution takes some minutes to start because the system has to create the navigation meshes and other assets. Wait until the process is finished.
 
 [back to main](index.md)
