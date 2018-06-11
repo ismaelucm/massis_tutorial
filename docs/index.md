@@ -22,10 +22,10 @@ MASSIS has been designed to keep a balance between flexibility and performance.
 
 ## What's new
 
-In the last version (3.4) we have adding new features and improvements. Among other things it has been modified:
+In the last version (3.4) we have added new features and improvements. Among other things it has been modified:
 
 * Pathfinding algorithms have been improved from previous versions.
-* Walking and running speed now can be modified in real time. 
+* Walking and running speed now can be modeified in real time. 
 * Now it is easier to create new behaviours and new scenarios using LUA
 
 
