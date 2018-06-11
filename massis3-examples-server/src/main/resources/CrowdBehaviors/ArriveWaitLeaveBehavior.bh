@@ -1,39 +1,74 @@
 Behavior={
-    Name="RunAway",
+    Name="ArriveWaitLeave",
     Type="FSM",
     Blackboard={
+        Inputs={
+            Target="",
+            Path="",
+            Time="",
+            PlaceListToRunAway=""
+        }
     },
     States={
         State0={
-            Action="NextPathPointAgent",
+            Action="NextPathPoint",
             Initial=true,
-        },
-        State1={
-            Action="MoveToAgent",
-        }
-    },
-    Transitions={
-        {
-         From="State0",
-         When="ActionFinish",
-         To="State1"
-        }
-    }
-}
-
-Parameters={
+            Parameters={
                 Inputs={
                     Path="Blackboard.Path",
-                    Circular="Blackboard.IsCircularPath"
+                    Circular=false
                 },
                 Outputs={
                     FinalPosition="Blackboard.Target"
                 }
             }
-
-                        Parameters={
-                            Inputs={
-                                Target="Blackboard.Target",
-                                Animation="walk1"
-                            }
-                        }
+        },
+        State1={
+            Action="MoveTo",
+            Parameters={
+             Inputs={
+                 Target="Blackboard.Target",
+                 Animation="walk1"
+             }
+         }
+        },
+        State2={
+             Action="Wait",
+             Parameters={
+                 Inputs={
+                     Time="Blackboard.Time"
+                 }
+             }
+        },
+        State3={
+            Action="RunAway",
+            Parameters={
+                Inputs={
+                 PlaceList="Blackboard.PlaceListToRunAway"
+                }
+            }
+        }
+    },
+    Transitions={
+        {
+            From="State0",
+            When="ActionFinish",
+            To="State1"
+        },
+        {
+            From="State1",
+            When="ActionFinish",
+            To="State2"
+        },
+        {
+            From="State2",
+            When="ActionFinish",
+            To="State3"
+        },
+        {
+            From="State3",
+            When="ActionFinish",
+            To="State4"
+        }
+    }
+}

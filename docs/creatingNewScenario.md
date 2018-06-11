@@ -65,7 +65,7 @@ Scenario = {
 Commands:
 ```
 
-Next, launch the simulation to prove that everything is correct.
+Next, launch the simulation to test that everything is correct.
 
 ```bash
 >./LaunchServer.sh -f myFirstSenario.lua
@@ -83,7 +83,7 @@ There are several behaviours pre-made in MASSIS in the directory *massis3-exampl
 * SecurityBehavior.bh
 * ThiefBehavior.bh
 
-In this example we selected FollowingPathBehavior. If you open the behavior, you must see the name of the behavior in the attribute Name. In this case the name is Faculty_1floor.
+In this example we selected FollowingPathBehavior. If you open the behavior, you must see the name of the behavior in the attribute Name. In this case the name is "FollowingPath".
 
 Set the name variable behavior set behavior = "FollowingPath". Configure the SpeedMin and SpeedMax as you want and set the AnimationSpeedReference = 4.0 (See code example). Finally in RewriteParameter set the variable Path to "Class1".
 

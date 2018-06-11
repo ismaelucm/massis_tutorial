@@ -4,7 +4,7 @@
 
 ## Before starting
 
-The directory when the system read the files that describe the different behavior is:
+The directory when the system reads the files that describe the different behavior is:
 
 massis3-examples-server/src/main/resources/CrowdBehaviors
 
@@ -40,11 +40,11 @@ Behavior={
 
 ## Finite State Machines (FSMs)
 
-The system is created with the aim to have more types of behaviour formalisms in the future. But at this moment, the only behaviour type available is FSM.
+The system is created with the aim to have more types of behaviour formalisms in the future. But at this moment, the only behaviour type available is **FSM**.
 
-FSM is the acronyms of Finite State Machine. It is a behaviour representation formalism widely used in the simulation, as autonomous behaviour in robotics and video-games. This formalism is easy to understand with non-technically users. For this reason, it has been used in MASSIS as the principal method to create behaviours.
+FSM is the acronyms of **Finite State Machine**. It is a behaviour representation formalism widely used in the simulations, as autonomous behaviour in robotics and video-games. This formalism is easy to understand with non-technically users. For this reason, it has been used in MASSIS as the principal method to create behaviours.
 
-The FSM is a set of states that can execute actions. Only one state is running at the same time. Each state has a collection of events that permit changing the current state to another. That occurs when the condition that triggers the transition is satisfied.
+The FSM is a set of states that can execute actions. Only one state is running at the same time. Each state has a collection of events that allow changing the current state to another. That occurs when the condition that triggers the transition is satisfied.
 
 ## Creating the states
 
@@ -105,7 +105,7 @@ The actions used as explained below:
         * PlaceList: A list of the positions,  separated by commas, from the action the selects the destination of the movement.
 
 
-Now, we need to connect the input and output parameters of different actions to allow the correct data flow among them. For instances, the action *MoveTo* need the destination location of the movement. The path that the agent follows is in action *NextPathPoint* that return the next step of the path. To communicate de output value of the action *NextPathPoint* with the input parameter of the action *MoveTo* we using the behaviour's blackboard.
+Now, we need to connect the input and output parameters of different actions to allow the correct data flow among them. For instances, the action *MoveTo* need the destination location of the movement. The path that the agent follows is in the action *NextPathPoint* that return the next step of the path. To communicate de output value of the action *NextPathPoint* with the input parameter of the action *MoveTo* we using the behaviour's blackboard.
 
 ```lua
 
@@ -131,11 +131,11 @@ Now, we need to connect the input and output parameters of different actions to 
 ```
 
 
-The value of the parameter "Blackboard.Target" refers to a parameter "Target" of the blackboard. The action *NextPathPoint* write in the variable Path of the behaviour blackboard the next step of the path. The action MoveTo read the value from the Path variable and copy the vlue in its input parameter *Target*.
+The value of the parameter "Blackboard.Target" refers to a parameter "Target" of the blackboard. The action *NextPathPoint* write in the variable Path of the behaviour blackboard the next step of the path. The action MoveTo read the value from the Path variable and copy the value in its input parameter *Target*.
 
 Note that the input parameter of the action and the value of the variable on the blackboard do not have to match.
 
-*NextPathPoint* need two input parameters: Path and Circular. Path reads the values from the blackboard. Doing this, we delegate the value of the path when we use the behavior in the scenario. The variable *Circular* is False and in the action *MoveTo*, the variable Animation is "walk1"
+*NextPathPoint* need two input parameters: Path and Circular. Path reads the values from the blackboard. Doing this, we delegate the value of the path when we use the behavior in the scenario. The variable *Circular* is False and in the action *MoveTo*, the variable *Animation* is "walk1"
 
 ```lua
 
@@ -169,7 +169,7 @@ Note that the input parameter of the action and the value of the variable on the
 ```
 
 
-The action *Wait* and *RunAway* aso read theirs inputs values from the blackboard and delegate theirs values to the instanciation of the behavior in some manner to the action *NextPAthPoint*.
+The action *Wait* and *RunAway* also read theirs inputs values from the blackboard and delegate theirs values to the instanciation of the behavior in some manner to the action *NextPathPoint*.
 
 ```LUA
 
@@ -222,7 +222,6 @@ The action *Wait* and *RunAway* aso read theirs inputs values from the blackboar
         }
     }
 ```
-
 
 And finally, we need establishing the transitions between the states. The NextPathPoint transits to MoveTo when the action is finished. MoveTo also transits to Wait when is finished and so on. The final behaviour is shown below.
 
@@ -304,7 +303,7 @@ Behavior={
 ## Using the behavior in a scenario
 
 
-To test the behaviour, we are going to create a new scenario using the behaviour. The scenario only has one agent that walk from the MainGate to the Classroom 1, it waits 2 seconds and leaves the faculty by one of its two exits: the main or the back one.
+To test the behaviour, we are going to create a new scenario that using the behaviour. This only has one agent that walks from the MainGate to the Classroom 1. The agent waits 2 seconds and leaves the faculty by one of its two exits: the main or the back one.
 
 ```LUA
 Scenario = {
@@ -332,7 +331,7 @@ Commands:
 MassisLua.createHuman("Agent01", 1, "MainGate")
 ```
 
-Teh examples shows how configure the inputs parameters of the behavior when it is used in a scenario. The path only have one step: Agent01. The time to wait when the agent arrive at class1 is 2 seconds and the final destination of the agent, where the agent leaves the faculty, will be either the main gate or the back gate.
+The examples show how configuring the inputs parameters of the behaviour when it is used in a scenario. The path only has one step: Class1. The time to wait when the agent arrives at class1 is 2 seconds and the final destination of the agent, where the agent leaves the faculty, will be either the main gate or the back gate. The action selects one of them randomly.
 
 ## Launch de scenario
 

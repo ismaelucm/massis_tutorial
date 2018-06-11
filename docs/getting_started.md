@@ -17,7 +17,7 @@ direct rendering: Yes
 
 ```
 
-It is advisable to have installed the ogg libraries on the system. Its absence does not prevent execution but generates a warning.
+It is advisable to have installed the ogg libraries on the system. Its absence does not prevent execution but generates a warning logs.
 
 ## Installation
 
@@ -25,7 +25,7 @@ To instal the tool, you must clone the following repository:
 
 ```bash
 > git clone XXXXXXXXX
-> git clone YYYYYYYYY
+> git clone https://github.com/ismaelucm/massis_tutorial.git
 ```
 
 The first project is the core System and the second proyect is the examples of the proyect.
@@ -54,5 +54,7 @@ Now the tool is installed in the system. To check whether everything is working 
 > chmod 755 LaunchServer.sh
 > ./LaunchServer.sh
 ```
+
+The first execution takes some minutes to begin because the system creating the navigation meshes and other assets. Wait until the process is finished.
 
 [back to main](index.md)

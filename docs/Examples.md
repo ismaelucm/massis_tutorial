@@ -4,7 +4,7 @@
 
 ## How to define simulations
 
-There are numerous manners to define a scenario in MASSIS, for instance, using LUA, JSON or programmatically. But in this section, we explain only one of them: using LUA. 
+There are numerous manners to define a scenario in MASSIS, for instance, describing it using LUA or JSON format, even programmatically. But in this section, we explain only one of them: using LUA format because it is the most intuitive. 
 
 A scenario is a LUA file that has two parts. First of them, the definition of the scenario and the second of them the command section.
 
@@ -45,9 +45,9 @@ Scenario = {
 
 This table has the following sections:
 
-* Scene: The name of the 3D environment that you want to simulate.
-* CameraConfig: The initial configuration of the camera. In this section, we can define the position, rotation and the direction of the camera is looking.
-* AgentsDescription: In this section, we can describe the different behavioural profile. Each of these profiles is a specific configuration of a behaviour selected. This behaviour governs the agent's decision making. Some attributes in this section are common to all agents, for instance, the min and max speed or the animation speed; but others (those that are in the subsection *RewriteParameter*) are specific to the behaviour selected.
+* **Scene**: The name of the 3D environment that you want to simulate.
+* **CameraConfig**: The initial configuration of the camera. In this section, we can define the position, rotation and the direction where the camera looks.
+* **AgentsDescription**: In this section, we can describe the different behavioural profiles that using the simulation. Each of these profiles is a specific configuration of a behaviour selected. This behaviour governs the agent's decision making. Some attributes in this section are common to all agents, for instance, the min and max speed or the animation speed; but others (those that are in the subsection *RewriteParameter*) are specific to the behaviour selected.
 
 ### Command Section
 
@@ -57,18 +57,19 @@ The command section is used to invoke methods on the simulator. These methods ca
     * behavior-profile: The behavioural profile used by the agent.
     * num-instances: Number of the instances of the agent created.
     * location: The location where the agent will be instantiated.
-* MassisLua.createHumanDeferred(behavioural-profile, num-instances, location, delay): Similar to previous one, but the agent is created with a delay indicated in the fourth parameter
+* MassisLua.createHumanDeferred(behavioural-profile, num-instances, location, delay): Similar to previous one, but the agent is created with a delay indicated in the fourth parameter.
 
-Next we will explain the different scenarios that MASSIS brings by already configured.
+
+Next, we will explain the different scenarios that MASSIS brings by already configured. These scenarios can be directly executed and serve as an example to create new ones.
 
 ## Examples included in MASSIS
 
 
-MASSIS has some simulations and behaviours created as an example. In this section of the tutorial, we will explain each of them.
+MASSIS has some simulations and behaviours created as an example. In this section of the tutorial, we will explain each of them and how they have been configured.
 
 ### Example SimpleExample01.lua
 
-A simple simulation where we create one pedestrian outside the faculty, going to the first classroom. Its walking speed is selected randomly between 1 - 5 and they are using the behaviour FollowingPath.
+This is a simple simulation where we creating one pedestrian outside the faculty, going to the first classroom. Its walk speed is selected randomly between 1 - 5 and it use the behaviour FollowingPath. This behavior move the agente down a given path.
 
 ```LUA
 Scenario = {
@@ -93,7 +94,7 @@ Scenario = {
 Commands:
 MassisLua.createHuman("population", 1, "MainGate")
 ```
-This scenario describes a behaviour profile named *population* that used the behaviour **FollowingPath** and its speed is a random value between 1 to 5. The parameter path of the behaviour is equal to *class1* and it is the destination of the agent. In the command section, the scenario creating one agent with the profile *population* at "MainGate".
+This scenario describes a behaviour profile named *population* that used the behaviour **FollowingPath** and its speed is a random value between 1 to 5. The parameter path of the behaviour is equal to *class1* and it is the destination of the agent. In the command section, the scenario creating one agent with the profile *population* at "MainGate" position.
 
 To launch the example, the following command is needed
 
@@ -103,7 +104,7 @@ To launch the example, the following command is needed
 
 ### Example SimpleExample02.lua
 
-This simulation creates two groups of pedestrian that walks at the first classroom, one of then are created at the main gate and another at the back gate. Both walk with a random speeds between 1-5. All they use the same behavior: FollowingPath.
+This simulation creates two groups of pedestrians that walk at the first classroom, one of this at the main gate and another at the back. Both walk with random speeds between 1-5. All they use the same behaviour: FollowingPath.
 
 ```LUA
 Scenario = {
@@ -221,7 +222,7 @@ To launch the example, the following command is needed
 ### Example EntranceToClassDifferentWaves.lua
 
 
-The simulation has two agent waves. In the first wave, the simulation creates twelve groups of agents, six of them in the main gate and six more and another six in the back gate. Each group have a different classroom as a destination. The second wave is the same as the first wave but start 50 seconds after. All they use the behaviour FollowingPath.
+The simulation has two agent waves. In the first wave, the simulation creates twelve groups of agents, six of them in the main gate and another six in the back gate. Each group have a different classroom as a destination. The second wave is the same as the first wave but start 50 seconds later. All they use the behaviour FollowingPath.
 
 
 ```LUA
@@ -317,7 +318,7 @@ MassisLua.createHumanDeferred("Cafeteria", 10, "MainGate", 50)
 MassisLua.createHumanDeferred("Cafeteria", 10, "BackGate", 50)
 ```
 
-We have used the command *createHumanDeferred* creating agents with a delay (50 seconds in this case).  This allows the second wave of agents.
+We have used the command *createHumanDeferred* creating agents with a delay (50 seconds in this case). This allows the second wave of agents.
 
 To launch the example, the following command is needed
 
