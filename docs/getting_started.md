@@ -38,12 +38,11 @@ Move into massis3-4 directory and  compile the project using Maven:
 > mvn install
 ```
 
-Next change to the directory massis3-examples and  compile de example project using Maven again:
+Next change to the directory massis3-examples and  compile de example project using the python command install.py and following the instructions to configure the server:
 
 ```bash
 > cd massis3-examples
-> mvn compile
-> mvn install
+> python3 install.py
 ```
 
 Now Massis is installed in the system. To check that everything is working properly, being in the massis3-examples directory, try to  launch the ''hello world'' simulation:
