@@ -6,6 +6,20 @@ MASSIS has been created using [Maven](https://maven.apache.org/) and [Java 8](ht
 
 Maven can be installed from here: [https://maven.apache.org/install.html](https://maven.apache.org/install.html)
 
+The tool has an installation assistant to help in the installation process. The installer using python. To check whether python is installed
+
+```bash
+> python3 --version
+Python 3.5.2
+
+```
+If python is not installed in your system, you can install it with the following commands:
+
+```bash
+> sudo apt-get update
+> sudo apt-get install -y python3
+```
+
 In its current version, MASSIS also uses the [JMonkeyEngine](http://jmonkeyengine.org/) to show the simulation in 3D. The JMonkeyEngine will be installed in the system by Maven, but it requires  the [OpenGL](https://www.opengl.org/) hardware acceleration to be enabled on the system. The following command (in Linux) checks whether OpenGL is installed on the system:
 
 
@@ -24,7 +38,8 @@ It is advisable to have installed the [Ogg](https://xiph.org/ogg/) libraries on 
 To install Massis,  clone the following repositories:
 
 ```bash
-> git clone XXXXXXXXX
+> git clone asset repository
+> git clone core repository
 > git clone https://github.com/ismaelucm/massis_tutorial.git
 ```
 
