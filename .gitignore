@@ -2,7 +2,7 @@
 libbulletjme.so
 .project
 target
-*/target/*
+*target*
 .classpath
 bin
 .idea

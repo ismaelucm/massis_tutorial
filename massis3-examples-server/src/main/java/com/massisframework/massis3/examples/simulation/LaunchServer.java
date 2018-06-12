@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import com.massisframework.massis3.core.config.ScenarioConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -66,7 +67,7 @@ public class LaunchServer {
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
-            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua";
             //args[1] = "SuspectBehaviorExample.lua";
 
         }
@@ -170,7 +171,9 @@ public class LaunchServer {
         if (fileComplete != null) {
 
             if (filtType == FIleType.JSON) {
-                LaunchWithJsonFile(fileComplete, config);
+                JsonObject confFile = new JsonObject(fileComplete);
+                ScenarioConfig scenarioConfig = new ScenarioConfig(confFile);
+                LaunchWithJsonFile(scenarioConfig, config);
             } else if (filtType == FIleType.LUA) {
                 LaunchWithLuaFile(fileComplete, config);
             }
@@ -184,13 +187,12 @@ public class LaunchServer {
     }
 
     protected static void LaunchWithLuaFile(String fileComplete, CommandLineConfig config) throws Exception {
-        String jsonFormat = SimulationByFile.luaToJSON(fileComplete);
-        LaunchWithJsonFile(jsonFormat, config);
+        ScenarioConfig scenarioConfig = SimulationByFile.luaToJSON(fileComplete);
+        LaunchWithJsonFile(scenarioConfig, config);
     }
 
-    protected static void LaunchWithJsonFile(String fileComplete, CommandLineConfig config) throws Exception {
-        SimulationByFile.setScenarioConfiguration(fileComplete);
-        SimulationByFile simByFile = new SimulationByFile();
+    protected static void LaunchWithJsonFile(ScenarioConfig scenarioConfig, CommandLineConfig config) throws Exception {
+        SimulationByFile simByFile = SimulationByFile.StaticSimulationByFile(scenarioConfig);
         LaunchScene(config, simByFile);
     }
 

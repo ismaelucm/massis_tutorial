@@ -20,24 +20,29 @@ public class SimulationByFile extends PreconfiguredSimulation {
 
     private static final Logger log = LoggerFactory.getLogger(LaunchServer.class);
 
-    public String getSimulationName() {
-        return "Faculty_1floor";
+    private static ScenarioConfig _scenarioConfig;
+
+    public static SimulationByFile StaticSimulationByFile(ScenarioConfig scenarioConfig)
+    {
+        _scenarioConfig = scenarioConfig;
+        return new SimulationByFile();
+    }
+
+    public String getSimulationName()
+    {
+        return _scenarioConfig.getScene();
     }
 
     public String getClassName() {
         return SimulationByFile.class.getName();
     }
 
-    private static JsonObject _configuration;
 
-    public static void setScenarioConfiguration(String jsonFile) {
-        _configuration = new JsonObject(jsonFile);
-    }
 
-    public static String luaToJSON(String luaFile) {
+    public static ScenarioConfig luaToJSON(String luaFile) {
         ScenarioConfig scenarioConfig = LuaParser.loadScenario(luaFile);
-        String scenarioStr = scenarioConfig.toJson().toString();
-        return scenarioStr;
+        //String scenarioStr = scenarioConfig.toJson().toString();
+        return scenarioConfig;
     }
 
     @Override
@@ -59,7 +64,7 @@ public class SimulationByFile extends PreconfiguredSimulation {
                 .withRendererType(SimulationServerConfig.RendererType.LWJGL_OPEN_GL_3)
                 .withRenderMode(SimulationServerConfig.RenderMode.SERVER);
 
-        SimulationExecutionConfig simConfig = createCustomSimExecConfig(cfg.getAssetFolders(), "Faculty_1floor");
+        SimulationExecutionConfig simConfig = createCustomSimExecConfig(cfg.getAssetFolders(), _scenarioConfig.getScene());
         Future<String> launchFuture = Future.future();
         SimulationServerLauncher.launch(this.vertx, cfg, launchFuture.completer());
         launchFuture.mapEmpty()
@@ -80,9 +85,8 @@ public class SimulationByFile extends PreconfiguredSimulation {
         SimulationByFileConfigTemplate template = new SimulationByFileConfigTemplate();
         SimulationExecutionConfig simExecConfig = template.createSimulationExecutionConfig(assetsFolder, scene);
 
-        ScenarioConfig scenarioConfig = new ScenarioConfig(_configuration);
 
-        simExecConfig.withScenarioConfig(scenarioConfig);
+        simExecConfig.withScenarioConfig(_scenarioConfig);
         return simExecConfig;
     }
 
