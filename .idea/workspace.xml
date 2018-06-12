@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e321bdfe-7326-454d-9dcb-1c38ef027c4f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/LaunchServer$FIleType.class" afterPath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/LaunchServer$FIleType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/LaunchServer.class" afterPath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/LaunchServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/SimulationDescriptions/SimulationDescriptionHelper/SimulationByFile.class" afterPath="$PROJECT_DIR$/massis3-examples-server/target/classes/com/massisframework/massis3/examples/simulation/SimulationDescriptions/SimulationDescriptionHelper/SimulationByFile.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/massis3-examples-utils/profiles/dev/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/massis3-examples-utils/profiles/prod/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/massis3-examples-utils/profiles/test/config.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/SimulationDescriptionHelper/SimulationByFile.java" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/SimulationDescriptionHelper/SimulationByFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/target/classes/simulationExamples/EntranceToclass.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/target/classes/simulationExamples/EntranceToclass.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-utils/pom.xml" afterPath="$PROJECT_DIR$/massis3-examples-utils/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/navmesh/target/" />
@@ -57,11 +55,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntranceToclass.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EntranceToclass.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="311">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/massis3-examples-navmesh/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -73,29 +91,6 @@
             <state relative-caret-position="370">
               <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VertxImpl.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/impl/VertxImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="595" column="0" lean-forward="false" selection-start-line="595" selection-start-column="0" selection-end-line="595" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeploymentManager.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-core/3.4.2/vertx-core-3.4.2-sources.jar!/io/vertx/core/impl/DeploymentManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-              <folding>
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -213,7 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/ExitFaculty_1Floor.java" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/templates/DummySimulationExecutionConfigTemplate.java" />
         <option value="$PROJECT_DIR$/massis3-examples-genetic/src/main/resources/exp04.txt" />
         <option value="$PROJECT_DIR$/massis3-examples-genetic/src/main/java/com/massisframework/massis3/examples/simulator/World/SimulationNode.java" />
@@ -252,7 +246,6 @@
         <option value="$PROJECT_DIR$/massis3-examples-genetic/profiles/test/config.properties" />
         <option value="$PROJECT_DIR$/massis3-examples-server/profiles/test/config.properties" />
         <option value="$PROJECT_DIR$/massis3-examples-server/profiles/prod/config.properties" />
-        <option value="$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties" />
         <option value="$PROJECT_DIR$/massis3-examples-genetic/src/main/java/com/massisframework/massis3/examples/simulator/World/World.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SimpleExample01.lua" />
@@ -264,6 +257,8 @@
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/SimulationDescriptionHelper/SimulationByFile.java" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" />
+        <option value="$PROJECT_DIR$/massis3-examples-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties" />
       </list>
     </option>
   </component>
@@ -330,75 +325,35 @@
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="configurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3-examples-navmesh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
               <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
               <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
               <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="simulation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="simulation" type="462c0819:PsiDirectoryNode" />
-              <item name="SimulationDescriptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="simulation" type="462c0819:PsiDirectoryNode" />
-              <item name="SimulationDescriptions" type="462c0819:PsiDirectoryNode" />
-              <item name="SimulationDescriptionHelper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="massis3-examples-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="simulationExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3-examples-utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
@@ -768,12 +723,12 @@
       <workItem from="1528364621776" duration="13742000" />
       <workItem from="1528466800019" duration="7821000" />
       <workItem from="1528726541070" duration="1060000" />
-      <workItem from="1528789240442" duration="8529000" />
+      <workItem from="1528789240442" duration="12297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466406000" />
+    <option name="totallyTimeSpent" value="470174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -797,7 +752,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376344" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28172043" sideWeight="0.49199572" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32258064" sideWeight="0.49199572" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35376343" sideWeight="0.6563501" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20704375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -966,21 +921,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/massis3-examples-server/profiles/prod/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/massis3-examples-genetic/src/main/java/com/massisframework/massis3/examples/simulator/Graph/Vertice.java" />
     <entry file="file://$PROJECT_DIR$/massis3-examples-genetic/src/main/java/com/massisframework/massis3/examples/simulator/Graph/Graph.java" />
     <entry file="file://$PROJECT_DIR$/massis3-examples-genetic/src/main/java/com/massisframework/massis3/examples/simulator/Genetic/Individuals/PedestrianGA.java" />
     <entry file="file://$PROJECT_DIR$/massis3-examples-genetic/src/main/resources/SceneExample.xml" />
@@ -1202,8 +1142,8 @@
         <state relative-caret-position="229">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="false" />
+            <element signature="e#2239#2240#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1290,10 +1230,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-navmesh/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="311">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
