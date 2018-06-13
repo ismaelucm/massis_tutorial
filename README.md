@@ -53,27 +53,27 @@ Where <file_human_description_lua> is a file where the user can describe differe
 
 To run this example
 
-	LaunchServer.sh -f src/main/resources/simulationExamples/SimpleExample01.lua
+	LaunchServer.sh -f SimpleExample01.lua
 	
 * SimpleExample02.lua: This simulation creates two groups of pedestrian, one of then in the main gate and another in the back gate. Both walking with different speeds between 1-5 and with the destination at the first classroom.
 
  To run this example:
 
-	LaunchServer.sh -f src/main/resources/simulationExamples/SimpleExample02.lua
+	LaunchServer.sh -f SimpleExample02.lua
 
 * EntranceToclass.lua: This simulation creates ten groups of pedestrian, five of them in the main gate and another five in the back gate. All groups walking with different speeds between 1-5 and with the destination at the different classrooms.
 All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f src/main/resources/EntranceToclass.lua
+	LaunchServer.sh -f EntranceToclass.lua
 
 
 * EntranceToClassDifferentWaves.lua: The simulation has two pedestrian waves. In the first wave, the simulation creates twelve groups of pedestrian, six of them in the main gate and another six in the back gate. All groups walking with different speeds between 1-5 and with the destination at the different classrooms and the cafeteria. The second wave is the same of the first wave, but start 50 seconds after. All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f src/main/resources/simulationExamples/EntranceToClassDifferentWaves.lua
+	LaunchServer.sh -f EntranceToClassDifferentWaves.lua
 
 * Evacuation.lua: The simulation simulates an evacuation of the five classrooms. The path to follow has been determined in the simulation.
 	* The populations Aula1, Aula2, Aula3 are evacuated through the main door
@@ -83,7 +83,7 @@ All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f src/main/resources/simulationExamples/Evacuation.lua
+	LaunchServer.sh -f Evacuation.lua
 
 * SecurityThief.lua: The simulation has three profiles: Victims, Thief and Security. 
 	* The security patrolling around the hall.
@@ -93,7 +93,7 @@ All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f src/main/resources/simulationExamples/SecurityThief.lua
+	LaunchServer.sh -f SecurityThief.lua
 
 
 To show the help you must run the following command:
