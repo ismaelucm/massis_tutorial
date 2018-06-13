@@ -31,14 +31,23 @@ The last version (3.4) has new features and improvements:
 
 # Purpose of the tutorial
 
-This tutorial shows, step by step, the process to create MASSIS simulations,  from a simple simulation model to more complex scenarios.
+This tutorial shows, step by step, the process to create MASSIS simulations.
+
+There are two main parts:
+* Part I: Basics for building and running Massis simulations, with configuration of scenarios and agents.
+* Part II: Advanced tutorial (to be developed) with the creation of new environment and more complex agent behaviours.
+
+There is an Appendix with a description of main primitives to define actions, conditions and behaviours.
 
 # Table of Contents
 
-* [Getting started](getting_started.md)
-* [Some examples](Examples.md)
-* [Creating new scenarios](creatingNewScenario.md)
-* [Creating new behaviors](creatingNewBehavior.md)
+* Part I: Basics of Massis
+   * [Getting started](getting_started.md)
+   * [Some examples](Examples.md)
+   * [Creating new scenarios](creatingNewScenario.md)
+   * [Creating new behaviors](creatingNewBehavior.md)
+* Part II: Advanced tutorial 
+   * To be done.
 * Appendix:
     * [Actions:](appendix_actions.md)
     * [Conditions:](appendix_conditions.md)
