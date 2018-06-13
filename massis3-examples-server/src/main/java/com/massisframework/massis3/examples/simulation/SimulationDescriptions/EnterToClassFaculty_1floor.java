@@ -91,10 +91,11 @@ import java.util.List;
         CameraConfig camConfig = CreateCameraConfig();
         WorldConfig wordConfig = CreateWorld();
         AgentConfig agentConfig = CreateAgentConfig();
-
+        List<CameraConfig> cconfig=new  ArrayList<CameraConfig>();
+        cconfig.add(camConfig);
 
         ScenarioConfig scenarioConfig = new ScenarioConfig()
-                .withCameraConfig(camConfig)
+                .withCameraConfig(cconfig)
                 .withAgentConfig(agentConfig)
                 .withCommands(Arrays.asList(
                         //"create population01 20 (94.19, 2.3800337f, 71.662235f)",

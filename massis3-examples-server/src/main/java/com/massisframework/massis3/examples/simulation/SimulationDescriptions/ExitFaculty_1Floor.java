@@ -148,9 +148,12 @@ public class ExitFaculty_1Floor extends PreconfiguredSimulation implements Simul
         WorldConfig wordConfig = CreateWorld();
         AgentConfig agentConfig = CreateAgentConfig();
 
+        List<CameraConfig> cconfig=new  ArrayList<CameraConfig>();
+        cconfig.add(camConfig);
+        
         ScenarioConfig scenarioConfig = new ScenarioConfig()
                 .withAgentConfig(agentConfig)
-                .withCameraConfig(camConfig)
+                .withCameraConfig(cconfig)
                 .withCommands(Arrays.asList(
                 "create populationClass1 25 MainGate",
                 "create populationClass2 25 MainGate",
