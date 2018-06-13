@@ -16,7 +16,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by mcardenas on 16/10/17.
@@ -62,10 +64,11 @@ public class LaunchSimulationServerVerticle extends AbstractVerticle {
                         .withLocation(new JsonPoint(33.0f, 165.0f, 54.0f))
                         .withRotation(new JsonPoint(90.0f, 0.0f, 0.0f))
                         .withLookAt(new JsonPoint(0.0f, 0.0f, 0.0f));
-
+                List<CameraConfig> cconfig=new  ArrayList<CameraConfig>();
+                cconfig.add(camConfig);
 
                 ScenarioConfig scenarioConfig = new ScenarioConfig()
-                        .withCameraConfig(camConfig);
+                        .withCameraConfig(cconfig);
 
 
                 SimulationExecutionConfig simConfig = new SimulationExecutionConfig()

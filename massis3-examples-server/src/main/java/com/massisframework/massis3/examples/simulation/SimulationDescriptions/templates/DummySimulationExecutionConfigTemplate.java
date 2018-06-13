@@ -14,9 +14,13 @@ public class DummySimulationExecutionConfigTemplate implements SimulationExecuti
         CameraConfig camConfig = CreateCameraConfig();
         WorldConfig wordConfig = CreateWorld();
         AgentConfig agentConfig = CreateAgentConfig();
+        
+
+        List<CameraConfig> cconfig=new  ArrayList<CameraConfig>();
+        cconfig.add(camConfig);
 
         ScenarioConfig scenarioConfig = new ScenarioConfig()
-                .withCameraConfig(camConfig)
+                .withCameraConfig(cconfig)
                 .withAgentConfig(agentConfig)
                 .withCommands(Arrays.asList(
                         "create populationClass1 25 MainGate",
