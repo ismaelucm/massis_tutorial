@@ -4,77 +4,13 @@
 -- the population Cafeteria is evacuated using the shortes path to through the main door
 -- All they using the behavior FollowingPath
 
-<<<<<<< HEAD
-Scenario = {
-    Scene="Faculty_1floor",
-    CameraConfig = {
-        location = { 33.0, 165.0, 54.0 },
-        rotation = { 90.0, 0.0, 0.0 },
-        lookAt = { 0.0, 0.0, 0.0 }
-    },
-    AgentsDescriptions = {
-        Class1 = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "ClassesLobby.Class1,LobbyEventRoom.Hall,MainHall.Entrance,MainGate",
-                SpeedPath = "1.0,5.0,10.0,15.0"
-            }
-        },
-        Class2 = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "ClassesLobby.Class2,ClassesLobby.Class1,LobbyEventRoom.Hall,MainHall.Entrance,MainGate",
-                SpeedPath = "1.0,5.0,10.0,15.0"
-            }
-        },
-        Class3 = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "ClassesLobby.Class3,ClassesLobby.Class2,ClassesLobby.Class1,MainHall.Entrance,MainGate",
-                SpeedPath = "1.0,5.0,10.0,15.0"
-            }
-        },
-        Class4 = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "ClassesLobby.Class4,ClassesLobby.Class5,HallBackGate.Lobby,BackGate",
-                SpeedPath = "1.0,5.0,10.0"
-            }
-        },
-        Class5 = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "ClassesLobby.Class5,HallBackGate.Lobby,BackGate",
-                SpeedPath = "1.0,5.0,10.0"
-            }
-        },
-        Cafeteria = {
-            behavior = "FollowingPathWithSpeed",
-            Speed=4.0,
-            AnimationSpeedReference = 4.0,
-            RewriteParameter = {
-                Path = "MainGate",
-                SpeedPath = "1.0"
-            }
-        }
-    }
-=======
 Scenario={
 	CameraConfig = {
 		location={85.87224, 59.912987, 51.260212},
 		rotation={90.0,0.0,0.0},
 		lookAt={0.0, -0.9999996, 0}
 	},
+   Scene="Faculty_1floor",
 	VideoConfig={
 		filename="videotest.flv",
 		cameraId="0",
@@ -142,7 +78,6 @@ Scenario={
 			}
 		}
 	}
->>>>>>> 8b3c4138bf9e6da8276d839a7b511e6b94c7aa2f
 }
 
 Commands:
