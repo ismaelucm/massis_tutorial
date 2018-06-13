@@ -9,3 +9,4 @@ bin
 *.log
 MassisOutputs
 *.class
+*.flv
