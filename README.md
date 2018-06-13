@@ -334,4 +334,3 @@ It takes too long to launch, and it shows weird messages such as
 	WARNING: Colinear uv coordinates for triangle [17, 18, 19]; tex0 = [1, 1], tex1 = [1, 1], tex2 = [0, 1]
 
 The program uses originally sweet home 3D files that need to be converted to massis format (JMonkey with the appropriate additional files). This requires a compilation of the assets that may take from 2 to 5 minutes in a core i7. You can check $HOME/.massis/assets and watch as the new files are created. This happens only once,unless you modify one of the sweet home 3D files.
-
