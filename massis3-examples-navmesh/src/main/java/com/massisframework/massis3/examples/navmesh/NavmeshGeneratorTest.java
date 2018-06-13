@@ -10,15 +10,15 @@ import com.jme3.system.JmeSystem;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class NavmeshGeneratorTest extends SimpleApplication{
+public class NavmeshGeneratorTest extends SimpleApplication {
 
     protected LightingConfiguration _light;
     protected NavmeshConfiguration _navmeshConfig;
 
-    public NavmeshGeneratorTest() throws Exception
-    {
+    public NavmeshGeneratorTest() throws Exception {
         super();
     }
+
     @Override
     public void simpleInitApp() {
 
@@ -29,8 +29,8 @@ public class NavmeshGeneratorTest extends SimpleApplication{
         this.getInputManager().setCursorVisible(true);
         
         this.getCamera().setLocation(new Vector3f(0, 100, 0));
-        this.getCamera().lookAt(Vector3f.ZERO,Vector3f.UNIT_Y);
-        _light = new LightingConfiguration(this.getRootNode(),new Vector3f(-0.3f, -0.5f, -0.2f),ColorRGBA.DarkGray);
-        _navmeshConfig = new NavmeshConfiguration(this.getRootNode(),"assets/Scenes/Faculty_1floor/Faculty_1floor.j3o",this.assetManager,"Common/MatDefs/Misc/Unshaded.j3md", ColorRGBA.Blue, ColorRGBA.Red);
+        this.getCamera().lookAt(Vector3f.ZERO, Vector3f.UNIT_Y);
+        _light = new LightingConfiguration(this.getRootNode(), new Vector3f(-0.3f, -0.5f, -0.2f), ColorRGBA.DarkGray);
+        _navmeshConfig = new NavmeshConfiguration(this.getRootNode(), "assets/Scenes/Faculty_1floor/Faculty_1floor.j3o", this.assetManager, "Common/MatDefs/Misc/Unshaded.j3md", ColorRGBA.Blue, ColorRGBA.Red);
     }
 }

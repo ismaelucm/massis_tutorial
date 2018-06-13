@@ -1,7 +1,6 @@
 package com.massisframework.massis3.examples.navmesh;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.asset.AssetNotFoundException;
 import com.jme3.gde.nmgen.NavMeshController;
 import com.jme3.material.Material;
 import com.jme3.math.ColorRGBA;

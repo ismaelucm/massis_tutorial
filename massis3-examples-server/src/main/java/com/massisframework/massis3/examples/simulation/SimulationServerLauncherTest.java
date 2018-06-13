@@ -1,12 +1,11 @@
 package com.massisframework.massis3.examples.simulation;
 
-import java.io.IOException;
-import java.nio.file.Paths;
-
+import com.massisframework.massis3.simulation.server.SimulationServerLauncher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.massisframework.massis3.simulation.server.SimulationServerLauncher;
+import java.io.IOException;
+import java.nio.file.Paths;
 
 public class SimulationServerLauncherTest {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Scene arquetypeConfig="ArquetypeSimulationConfigExample" sceneName="SeceneExample" >
+<Scene arquetypeConfig="ArquetypeSimulationConfigExample" sceneName="SeceneExample">
     <SimulationConfig stepTime="1" numSteps="100" simulationTime="100"/>
 
     <!-- WorldConfig => Configure the graph that represent the world-->
@@ -83,7 +83,6 @@
 
             <VerticeConfig source="CafeteriaHall" destination="ProfessorsCafeteria" transportRate="2"/>
             <VerticeConfig source="CafeteriaHall" destination="StudentsCafeteria" transportRate="2"/>
-
 
 
         </VerticeConfigList>
@@ -351,7 +350,6 @@
 
 
         <InstanciationConfig numElements="1" arquetype="SimulationFinishControll"/>
-
 
 
     </InstanciationConfigList>

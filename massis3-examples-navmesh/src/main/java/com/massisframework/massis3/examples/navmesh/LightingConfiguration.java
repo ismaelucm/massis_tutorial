@@ -7,8 +7,7 @@ import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 
 
-public class LightingConfiguration
-{
+public class LightingConfiguration {
     protected DirectionalLight _directionalLight;
     protected Node _parent;
     protected AmbientLight _ambientLight;

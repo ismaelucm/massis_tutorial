@@ -1,15 +1,15 @@
 {
-	"httpServerConfig": {
-		"host": "127.0.0.1",
-		"port": 8082
-	},
-	"authPropertiesFile": "/home/mosi/actualizar/massis3-4/massis3-examples/src/main/resources/webauth.properties",
-	"assetFolders": [
-		"/home/mosi/actualizar/massis3-assets/Scenes",
-		"/home/mosi/actualizar/massis3-assets/models",
-		"/home/mosi/actualizar/massis3-assets/animations"
-	],
-	"instances": 1,
-	"renderMode": "SERVER",
-	"rendererType": "LWJGL-OpenGL3"
+  "httpServerConfig": {
+    "host": "127.0.0.1",
+    "port": 8082
+  },
+  "authPropertiesFile": "/home/mosi-agil/Documentos/mosi-agil/massis3-assets/src/main/resources/webauth.properties",
+  "assetFolders": [
+    "/home/mosi-agil/Documentos/mosi-agil/massis3-assets/Scenes",
+    "/home/mosi-agil/Documentos/mosi-agil/massis3-assets/models",
+    "/home/mosi-agil/Documentos/mosi-agil/massis3-assets/animations"
+  ],
+  "instances": 1,
+  "renderMode": "SERVER",
+  "rendererType": "LWJGL-OpenGL3"
 }

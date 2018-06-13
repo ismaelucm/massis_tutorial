@@ -9,12 +9,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public interface SimulationExecutionConfigTemplate
-{
-    SimulationExecutionConfig createSimulationExecutionConfig(List<String > assetsFolder, String scene);
+public interface SimulationExecutionConfigTemplate {
+    SimulationExecutionConfig createSimulationExecutionConfig(List<String> assetsFolder, String scene);
+
     WorldConfig CreateWorld();
-    RectangleRegion CreateRegion(String name,float xMin, float xMax, float zMin, float zMax);
+
+    RectangleRegion CreateRegion(String name, float xMin, float xMax, float zMin, float zMax);
+
     AgentConfig CreateAgentConfig();
+
     CameraConfig CreateCameraConfig();
 
 }
