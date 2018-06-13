@@ -40,7 +40,7 @@ public class NavmeshConfiguration
         		0.1f, 0.5f, 0.5f,
                 0.25f, 48f, true, 0.3f, 5f, true, 
                 4, 8, 10f, 0.75f, 4, 25f,
-                0.1f, 15f,8,true);
+                0.1f, 2f,10,true);
         Geometry navGeom = new Geometry("NavMesh", _navMesh);
         Geometry navMeshVertex = new Geometry("NavMeshVertex", _navMesh);
 
