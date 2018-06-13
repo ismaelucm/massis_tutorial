@@ -137,8 +137,11 @@
         <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/ExitFaculty_1Floor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3384">
-              <caret line="206" column="42" lean-forward="false" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
-              <folding />
+              <caret line="209" column="42" lean-forward="false" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
+              <folding>
+                <marker date="1528895010910" expanded="true" signature="7030:9461" ph="{...}" />
+                <marker date="1528895010910" expanded="true" signature="9564:9812" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -717,12 +720,12 @@
       <workItem from="1528466800019" duration="7821000" />
       <workItem from="1528726541070" duration="1060000" />
       <workItem from="1528789240442" duration="12883000" />
-      <workItem from="1528881498197" duration="1809000" />
+      <workItem from="1528881498197" duration="3973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="472569000" />
+    <option name="totallyTimeSpent" value="474733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -863,13 +866,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/ExitFaculty_1Floor.java</url>
-          <line>167</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="412" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/EnterToClassFaculty_1floor.java</url>
-          <line>156</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="413" />
         </line-breakpoint>
@@ -905,7 +908,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/ExitFaculty_1Floor.java</url>
-          <line>205</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="448" />
         </line-breakpoint>
@@ -1147,8 +1150,11 @@
     <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/SimulationDescriptions/ExitFaculty_1Floor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3384">
-          <caret line="206" column="42" lean-forward="false" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
-          <folding />
+          <caret line="209" column="42" lean-forward="false" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="42" />
+          <folding>
+            <marker date="1528895010910" expanded="true" signature="7030:9461" ph="{...}" />
+            <marker date="1528895010910" expanded="true" signature="9564:9812" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
