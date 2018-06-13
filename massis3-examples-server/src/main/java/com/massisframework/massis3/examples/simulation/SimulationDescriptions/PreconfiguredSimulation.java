@@ -20,8 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class PreconfiguredSimulation extends AbstractVerticle
-{
+public abstract class PreconfiguredSimulation extends AbstractVerticle {
     protected static final Logger log = LoggerFactory.getLogger(LaunchServer.class);
 
     private static final PreconfiguredSimulation[] _preconfiguredSimulations = {
@@ -29,110 +28,98 @@ public abstract class PreconfiguredSimulation extends AbstractVerticle
             new EnterToClassFaculty_1floor()
     };
 
-    private static Map<String,PreconfiguredSimulation> _simulationMap = null;
+    private static Map<String, PreconfiguredSimulation> _simulationMap = null;
 
 
-    public static PreconfiguredSimulation getSim(String name)
-    {
+    public static PreconfiguredSimulation getSim(String name) {
         Build();
         return _simulationMap.get(name);
 
     }
 
-    public static List<String> getList()
-    {
+    public static List<String> getList() {
         Build();
         List<String> list = new ArrayList<>();
-        for(int i = 0; i < _preconfiguredSimulations.length; ++i)
-        {
+        for (int i = 0; i < _preconfiguredSimulations.length; ++i) {
             list.add(_preconfiguredSimulations[i].getSimulationName());
         }
         return list;
     }
 
-    protected static void Build()
-    {
-        if(_simulationMap == null)
-        {
+    protected static void Build() {
+        if (_simulationMap == null) {
             _simulationMap = new HashMap<>();
-            for(int i = 0; i < _preconfiguredSimulations.length; ++i)
-            {
+            for (int i = 0; i < _preconfiguredSimulations.length; ++i) {
                 _simulationMap.put(_preconfiguredSimulations[i].getSimulationName(), _preconfiguredSimulations[i]);
             }
         }
     }
 
-    protected void CreateHumans(long simID, SimulationExecutionConfig simConfig)
-    {
+    protected void CreateHumans(long simID, SimulationExecutionConfig simConfig) {
         AgentConfig humanConfig = simConfig.getScenarioConfig().getAgentConfig();
         List<String> commands = simConfig.getScenarioConfig().getCommands();
         HumanDescriptionMap humanDescriptionMap = new HumanDescriptionMap(humanConfig.getAgentDescription());
-        for(int i = 0; i < commands.size(); ++i)
-        {
+        for (int i = 0; i < commands.size(); ++i) {
             String command = commands.get(i);
-            processCommand(Long.toString(simID),command, humanDescriptionMap);
+            processCommand(Long.toString(simID), command, humanDescriptionMap);
         }
     }
 
-    protected void processCommand(String id, String command,HumanDescriptionMap humanDescriptionMap)
-    {
+    protected void processCommand(String id, String command, HumanDescriptionMap humanDescriptionMap) {
         try {
             if (command.trim().startsWith("create")) {
                 String[] parameters = command.split(" ");
                 String populationID = parameters[1].trim();
                 int numInstances = Integer.parseInt(parameters[2].trim());
-                if(parameters.length == 4) {
+                if (parameters.length == 4) {
                     //JsonPoint point = Convert.stringToJsonPoint(command);
                     createCommand(id, populationID, numInstances, parameters[3].trim(), humanDescriptionMap); //TODO es un future, corregirlo
-                }
-                else
-                {
+                } else {
                     float time = Float.parseFloat(parameters[4].trim());
-                    createDeferredCommand(id, populationID, numInstances, parameters[3].trim(),time, humanDescriptionMap); //TODO es un future, corregirlo
+                    createDeferredCommand(id, populationID, numInstances, parameters[3].trim(), time, humanDescriptionMap); //TODO es un future, corregirlo
                 }
             }
-        }
-        catch(Exception e)
-        {
-            log.error(" processCommand error: "+e.getMessage());
+        } catch (Exception e) {
+            log.error(" processCommand error: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    protected void createDeferredCommand(String id, String populationId, int numInstances, String point, float time, HumanDescriptionMap humanDescriptionMap)
-    {
+    protected void createDeferredCommand(String id, String populationId, int numInstances, String point, float time, HumanDescriptionMap humanDescriptionMap) {
         AgentDescription humanDescription = humanDescriptionMap.get(populationId);
-        for(int i = 0; i < numInstances; ++i) {
+        for (int i = 0; i < numInstances; ++i) {
             HumanAgentService agentService = Massis3ServiceUtils.createProxy(vertx, HumanAgentService.class, id);
-            agentService.createDeferredHumanWithDescriptionWithStrPoint(point,time,humanDescription.toJson(),ar2 -> { });
+            agentService.createDeferredHumanWithDescriptionWithStrPoint(point, time, humanDescription.toJson(), ar2 -> {
+            });
         }
     }
 
-    protected void createCommand(String id, String populationId, int numInstances, String point, HumanDescriptionMap humanDescriptionMap)
-    {
+    protected void createCommand(String id, String populationId, int numInstances, String point, HumanDescriptionMap humanDescriptionMap) {
         AgentDescription humanDescription = humanDescriptionMap.get(populationId);
-        for(int i = 0; i < numInstances; ++i) {
+        for (int i = 0; i < numInstances; ++i) {
             HumanAgentService agentService = Massis3ServiceUtils.createProxy(vertx, HumanAgentService.class, id);
-            agentService.createHumanWithDescriptionWithStrPoint(point,humanDescription.toJson(),ar2 -> { });
-        }
-    }
-    protected void createCommand(String id, String populationId, int numInstances, JsonPoint point, HumanDescriptionMap humanDescriptionMap)
-    {
-        AgentDescription humanDescription = humanDescriptionMap.get(populationId);
-        for(int i = 0; i < numInstances; ++i) {
-            HumanAgentService agentService = Massis3ServiceUtils.createProxy(vertx, HumanAgentService.class, id);
-            agentService.createHumanWithDescription(point,humanDescription.toJson(),ar2 -> { });
+            agentService.createHumanWithDescriptionWithStrPoint(point, humanDescription.toJson(), ar2 -> {
+            });
         }
     }
 
-    protected Future<Long> CreateSimWithJson(io.vertx.core.json.JsonObject configuration)
-    {
-        SimulationServerService proxy = Massis3ServiceUtils.createProxy(vertx,SimulationServerService.class, Massis3ServiceUtils.GLOBAL_SERVICE_GROUP);
+    protected void createCommand(String id, String populationId, int numInstances, JsonPoint point, HumanDescriptionMap humanDescriptionMap) {
+        AgentDescription humanDescription = humanDescriptionMap.get(populationId);
+        for (int i = 0; i < numInstances; ++i) {
+            HumanAgentService agentService = Massis3ServiceUtils.createProxy(vertx, HumanAgentService.class, id);
+            agentService.createHumanWithDescription(point, humanDescription.toJson(), ar2 -> {
+            });
+        }
+    }
+
+    protected Future<Long> CreateSimWithJson(io.vertx.core.json.JsonObject configuration) {
+        SimulationServerService proxy = Massis3ServiceUtils.createProxy(vertx, SimulationServerService.class, Massis3ServiceUtils.GLOBAL_SERVICE_GROUP);
         Future<Long> simCreateFuture = Future.future();
-        proxy.createWithJson(configuration,simCreateFuture);
+        proxy.createWithJson(configuration, simCreateFuture);
         return simCreateFuture;
     }
 
     public abstract String getSimulationName();
+
     public abstract String getClassName();
 }

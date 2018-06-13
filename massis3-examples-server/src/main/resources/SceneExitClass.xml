@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Scene arquetypeConfig="ArquetypeSimulationConfigExample" sceneName="SceneExitClass" >
+<Scene arquetypeConfig="ArquetypeSimulationConfigExample" sceneName="SceneExitClass">
     <SimulationConfig stepTime="1" numSteps="50" simulationTime="55"/>
 
     <!-- WorldConfig => Configure the graph that represent the world-->
@@ -49,7 +49,7 @@
             <VerticeConfig source="MainHall.Entrance" destination="MainHall.Library" transportRate="8"/>
             <VerticeConfig source="MainHall.Library" destination="LobbyEventRoom.Hall" transportRate="8"/>
 
-            <VerticeConfig source="LobbyEventRoom.Hall" destination="ClassesLobby.Class1"transportRate="5"/>
+            <VerticeConfig source="LobbyEventRoom.Hall" destination="ClassesLobby.Class1" transportRate="5"/>
             <VerticeConfig source="LobbyEventRoom.Hall" destination="LobbyEventRoom.EventRoom" transportRate="5"/>
             <VerticeConfig source="LobbyEventRoom.EventRoom" destination="Library" transportRate="2"/>
             <VerticeConfig source="LobbyEventRoom.EventRoom" destination="EventRoom" transportRate="2"/>
@@ -61,7 +61,7 @@
             <VerticeConfig source="LobbyCafeteria" destination="CafeteriaHall" transportRate="5"/>
             <VerticeConfig source="LobbyCafeteria" destination="ElevatorsLobby" transportRate="3"/>
 
-            <VerticeConfig source="ElevatorsLobby" destination="ClassesLobby.Class1"transportRate="3"/>
+            <VerticeConfig source="ElevatorsLobby" destination="ClassesLobby.Class1" transportRate="3"/>
             <!--<VerticeConfig source="ElevatorsLobby" destination="ClassesLobby.Class2"transportRate="2"/>-->
 
             <VerticeConfig source="ClassesLobby.Class1" destination="Class1" transportRate="2"/>
@@ -83,7 +83,6 @@
 
             <VerticeConfig source="CafeteriaHall" destination="ProfessorsCafeteria" transportRate="2"/>
             <VerticeConfig source="CafeteriaHall" destination="StudentsCafeteria" transportRate="2"/>
-
 
 
         </VerticeConfigList>
@@ -350,7 +349,6 @@
         </InstanciationConfig>
 
 
-
         <!-- Go to the classrooms -->
 
 
@@ -358,7 +356,8 @@
             <ComponentConfigOverrideList>
                 <ComponentConfig component="Pedestrian">
                     <AttributeList>
-                        <Attribute name="path" value="Class1,LobbyEventRoom.Class1,MainGate,ElevatorsLobby,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,Class1"/>
+                        <Attribute name="path"
+                                   value="Class1,LobbyEventRoom.Class1,MainGate,ElevatorsLobby,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,Class1"/>
                     </AttributeList>
                 </ComponentConfig>
             </ComponentConfigOverrideList>
@@ -368,7 +367,8 @@
             <ComponentConfigOverrideList>
                 <ComponentConfig component="Pedestrian">
                     <AttributeList>
-                        <Attribute name="path" value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,Class2"/>
+                        <Attribute name="path"
+                                   value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,Class2"/>
                     </AttributeList>
                 </ComponentConfig>
             </ComponentConfigOverrideList>
@@ -378,7 +378,8 @@
             <ComponentConfigOverrideList>
                 <ComponentConfig component="Pedestrian">
                     <AttributeList>
-                        <Attribute name="path" value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,Class3"/>
+                        <Attribute name="path"
+                                   value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,Class3"/>
                     </AttributeList>
                 </ComponentConfig>
             </ComponentConfigOverrideList>
@@ -388,7 +389,8 @@
             <ComponentConfigOverrideList>
                 <ComponentConfig component="Pedestrian">
                     <AttributeList>
-                        <Attribute name="path" value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,LobbyEventRoom.Class4,Class4"/>
+                        <Attribute name="path"
+                                   value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,LobbyEventRoom.Class4,Class4"/>
                     </AttributeList>
                 </ComponentConfig>
             </ComponentConfigOverrideList>
@@ -398,7 +400,8 @@
             <ComponentConfigOverrideList>
                 <ComponentConfig component="Pedestrian">
                     <AttributeList>
-                        <Attribute name="path" value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,LobbyEventRoom.Class4,LobbyEventRoom.Class5,Class5"/>
+                        <Attribute name="path"
+                                   value="MainGate,MainHall.Entrance,LobbyCafeteria,ElevatorsLobby,LobbyEventRoom.Class1,LobbyEventRoom.Class2,LobbyEventRoom.Class3,LobbyEventRoom.Class4,LobbyEventRoom.Class5,Class5"/>
 
                     </AttributeList>
                 </ComponentConfig>

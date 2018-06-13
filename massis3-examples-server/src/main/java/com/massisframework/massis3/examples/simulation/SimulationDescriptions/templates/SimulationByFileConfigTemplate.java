@@ -10,8 +10,7 @@ import java.util.List;
 public class SimulationByFileConfigTemplate extends DummySimulationExecutionConfigTemplate {
 
     @Override
-    public SimulationExecutionConfig createSimulationExecutionConfig(List<String > assetsFolder, String scene)
-    {
+    public SimulationExecutionConfig createSimulationExecutionConfig(List<String> assetsFolder, String scene) {
         //CameraConfig camConfig = CreateCameraConfig();
         WorldConfig wordConfig = CreateWorld();
 

@@ -1,9 +1,8 @@
 package com.massisframework.massis3.examples.simulation;
 
-import com.massisframework.massis3.examples.configuration.Configuration;
 import com.massisframework.massis3.core.config.*;
+import com.massisframework.massis3.examples.utils.Configuration;
 import com.massisframework.massis3.services.dataobjects.JsonPoint;
-import com.massisframework.massis3.services.dataobjects.JsonQuaternion;
 import com.massisframework.massis3.services.eventbus.Massis3ServiceUtils;
 import com.massisframework.massis3.services.eventbus.SimulationServerService;
 import com.massisframework.massis3.services.eventbus.sim.EnvironmentService;
@@ -26,10 +25,10 @@ import java.util.List;
  */
 public class LaunchSimulationServerVerticle extends AbstractVerticle {
 
-   
-   // private final String ASSETS_PATH = "/home/massis/actualizar/massis3-assets/";
+
+    // private final String ASSETS_PATH = "/home/massis/actualizar/massis3-assets/";
     //private final String SERVER_IP = "127.0.0.1";
-   // private final int SERVER_PORT = 8082;
+    // private final int SERVER_PORT = 8082;
     //variable log
     private static final Logger log = LoggerFactory.getLogger(VideoStreamingOutputExampleVerticle.class);
 
@@ -43,9 +42,9 @@ public class LaunchSimulationServerVerticle extends AbstractVerticle {
         /* 1. Deploy simulation server verticle cfg=JsonObject.mapFrom(this.config());*/
 
         SimulationServerConfig cfg = new SimulationServerConfig()
-                .withAssetFolders(Arrays.asList(Configuration.instance().getPath()+"Scenes",
-                		Configuration.instance().getPath()+"models",
-                		Configuration.instance().getPath()+"animations"))
+                .withAssetFolders(Arrays.asList(Configuration.instance().getPath() + "Scenes",
+                        Configuration.instance().getPath() + "models",
+                        Configuration.instance().getPath() + "animations"))
                 .withHttpServerConfig(new HttpServerConfig().withHost(Configuration.instance().getHost())
                         .withPort(Configuration.instance().getPort()))
                 .withAuthPropertiesFile("classpath:webauth.properties")
@@ -63,7 +62,7 @@ public class LaunchSimulationServerVerticle extends AbstractVerticle {
                         .setHandler(startFuture.completer());
                 CameraConfig camConfig = new CameraConfig()
                         .withLocation(new JsonPoint(33.0f, 165.0f, 54.0f))
-                        .withRotation(new JsonPoint(90.0f,0.0f,0.0f))
+                        .withRotation(new JsonPoint(90.0f, 0.0f, 0.0f))
                         .withLookAt(new JsonPoint(0.0f, 0.0f, 0.0f));
                 List<CameraConfig> cconfig=new  ArrayList<CameraConfig>();
                 cconfig.add(camConfig);
@@ -89,11 +88,10 @@ public class LaunchSimulationServerVerticle extends AbstractVerticle {
         return cameraIdFut;
     }
 
-    private Future<Long> CreateSimWithJson(JsonObject configuration)
-    {
-        SimulationServerService proxy = Massis3ServiceUtils.createProxy(vertx,SimulationServerService.class, Massis3ServiceUtils.GLOBAL_SERVICE_GROUP);
+    private Future<Long> CreateSimWithJson(JsonObject configuration) {
+        SimulationServerService proxy = Massis3ServiceUtils.createProxy(vertx, SimulationServerService.class, Massis3ServiceUtils.GLOBAL_SERVICE_GROUP);
         Future<Long> simCreateFuture = Future.future();
-        proxy.createWithJson(configuration,simCreateFuture);
+        proxy.createWithJson(configuration, simCreateFuture);
         return simCreateFuture;
     }
 
@@ -116,7 +114,7 @@ public class LaunchSimulationServerVerticle extends AbstractVerticle {
         // JsonObject config = new JsonObject(new
         // String(Files.readAllBytes(Paths.get(cfgPath))));
 
-        
+
         vertx.deployVerticle(VideoStreamingOutputExampleVerticle.class.getName(),
                 new DeploymentOptions() /* .setConfig(config) */, r -> {
                     if (r.failed()) {

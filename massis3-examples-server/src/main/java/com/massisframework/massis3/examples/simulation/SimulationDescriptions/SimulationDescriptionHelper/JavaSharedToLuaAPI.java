@@ -10,16 +10,15 @@ import org.luaj.vm2.lib.ZeroArgFunction;
  * this library, when loaded, creates a lua package called
  */
 
-public class JavaSharedToLuaAPI
-{
-    static public class Create extends ThreeArgFunction{
+public class JavaSharedToLuaAPI {
+    static public class Create extends ThreeArgFunction {
 
         @Override
         public LuaValue call(LuaValue populationId, LuaValue num, LuaValue position) {
             System.out.println("Se ha ejecutado el comando Create con los argumentos:");
-            System.out.println("populationId:"+populationId.toString());
-            System.out.println("num:"+num.toint());
-            System.out.println("position:"+num.toString());
+            System.out.println("populationId:" + populationId.toString());
+            System.out.println("num:" + num.toint());
+            System.out.println("position:" + num.toString());
             return NIL;
         }
     }
