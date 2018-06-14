@@ -49,8 +49,8 @@ There is an Appendix with a description of main primitives to define actions, co
 * Part II: Advanced tutorial 
    * To be done.
 * Appendix:
-    * [Actions:](appendix_actions.md)
-    * [Conditions:](appendix_conditions.md)
-    * [Behaviours:](appendix_behaviours.md)
+    * [Actions](appendix_actions.md)
+    * [Conditions](appendix_conditions.md)
+    * [Behaviours](appendix_behaviours.md)
 
 
