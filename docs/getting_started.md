@@ -66,7 +66,9 @@ This installation requires to provide some data for configuration of the server 
 * host_port=8080  (or other not in use)
 * host_path=/home/xxx/xxx/massis3-assets/  (the directory where the massis3-assets where extracted from the zip file)
 
-Now Massis  is installed in the system and the tutorial is ready. To check that everything is working properly, being in the *massis3-examples* directory, try to  launch the `hello world` simulation:
+## Test installation with first execution
+
+Now Massis  is installed in the system and the tutorial is ready. To check that everything is working properly, being in the *massis3-examples* directory, try to  launch one simulation:
 
 
 ```bash
@@ -75,7 +77,7 @@ Now Massis  is installed in the system and the tutorial is ready. To check that 
 > ./LaunchServer.sh
 ```
 
-The first execution takes quite a long time (several minutes) to start because the system has to create the navigation meshes and other assets. Be patient and wait until the process is finished.
+The first execution takes quite a long time (several minutes) to start because the system has to create the navigation meshes and other assets, and this requires  a considerable number of calculations. Be patient and wait until the process is finished, this will be only once.
 Note that during this first execution, a window appears and only after the system has built all the necessary elements, the animation of the simulation will be displayed. This first example shows some people entering in the building and going to some classrooms. Once they are in the classrooms, they stay there. You can stop the simulation with ctrl-C in the terminal window.
 
 ![FirstExecution](img/FirstMassisSimulation.png)
