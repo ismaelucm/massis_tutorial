@@ -1,12 +1,12 @@
-# Creating simulation scenarios in MASSIS
+# Trying several simulation scenarios with MASSIS
 
 [back to main](index.md)
 
 ## How to define simulations
 
-There are numerous manners to define a scenario in MASSIS, for instance, describing it using LUA or JSON format, even programmatically. But in this section, we explain only one of them: using LUA format because it is the most intuitive. 
+A scenario in MASSIS can be described in different ways, for instance, with specifications using LUA or JSON, or programmatically. This section shows one of these methods, using LUA format, because it is the most intuitive. 
 
-A scenario is a LUA file that has two parts. First of them, the definition of the scenario and the second of them the command section.
+A scenario can be defined in a LUA file with two parts. The first defines the scenario elements and the second some commands, for instance, to create some agents when starting the simulation.
 
 
 ```LUA
@@ -14,12 +14,12 @@ Scenario={
 }
 
 Commands:
-MassisLua.Method(parameters...)
+MassisLua.method(parameters...)
 ```
 
-### Scenario Section
+### Elements of a Scenario 
 
-A scenario is a table in LUA that describes the simulation. 
+The elements of a scenario are defined in a table in LUA, such as the following: 
 
 ```LUA
 Scenario = {
@@ -45,31 +45,31 @@ Scenario = {
 
 This table has the following sections:
 
-* **Scene**: The name of the 3D environment that you want to simulate.
-* **CameraConfig**: The initial configuration of the camera. In this section, we can define the position, rotation and the direction where the camera looks.
-* **AgentsDescription**: In this section, we can describe the different behavioural profiles that using the simulation. Each of these profiles is a specific configuration of a behaviour selected. This behaviour governs the agent's decision making. Some attributes in this section are common to all agents, for instance, the min and max speed or the animation speed; but others (those that are in the subsection *RewriteParameter*) are specific to the behaviour selected.
+* **Scene**: The name of the 3D environment  to simulate.
+* **CameraConfig**: The initial configuration of a camera, which consists of its position, rotation and the direction where the camera focuses.
+* **AgentsDescription**: Agents in the simulation have behavioural profiles. Each of these profiles is a specific configuration of a concrete behaviour, which governs the agent's decision making. Some attributes in this section are common to all agents, for instance, the min and max speed or the animation speed; but others (those that are in the subsection *RewriteParameter*) are specific to the behaviour that is defined.
 
-### Command Section
+### Commands
 
-The command section is used to invoke methods on the simulator. These methods can perform different actions. Nowadays, the commands implemented are:
+The commands section is used to invoke methods on the simulator. These methods can perform different actions. Nowadays, the commands that are implemented are:
 
 * MassisLua.createHuman(behavioural-profile, num-instances, location): Create a number of human agents in a specific location.
     * behavior-profile: The behavioural profile used by the agent.
-    * num-instances: Number of the instances of the agent created.
-    * location: The location where the agent will be instantiated.
-* MassisLua.createHumanDeferred(behavioural-profile, num-instances, location, delay): Similar to previous one, but the agent is created with a delay indicated in the fourth parameter.
+    * num-instances: Number of the instances of the agent that will be created.
+    * location: The location where the agents will be instantiated.
+* MassisLua.createHumanDeferred(behavioural-profile, num-instances, location, delay): Similar to previous one, but the agent is created with a delay that is indicated by the fourth parameter (in seconds).
 
 
-Next, we will explain the different scenarios that MASSIS brings by already configured. These scenarios can be directly executed and serve as an example to create new ones.
 
 ## Examples included in MASSIS
 
+The tutorial makes uses of several scenarios that are already provided with the MASSIS distribution. These scenarios can be directly executed and serve as  examples to create new ones.
 
-MASSIS has some simulations and behaviours created as an example. In this section of the tutorial, we will explain each of them and how they have been configured.
+The following examples use as environment the model of the building of our Faculty of Computer Science.
 
 ### Example SimpleExample01.lua
 
-This is a simple simulation where we creating one pedestrian outside the faculty, going to the first classroom. Its walk speed is selected randomly between 1 - 5 and it use the behaviour FollowingPath. This behavior move the agente down a given path.
+In this simple simulation   one pedestrian is created outside the faculty, and moves to the first classroom. The walk speed of the agent is selected randomly between 1 - 5 and  uses the behaviour *FollowingPath*. This behavior moves the agente through a given path.
 
 ```LUA
 Scenario = {
@@ -94,6 +94,7 @@ Scenario = {
 Commands:
 MassisLua.createHuman("population", 1, "MainGate")
 ```
+
 This scenario describes a behaviour profile named *population* that used the behaviour **FollowingPath** and its speed is a random value between 1 to 5. The parameter path of the behaviour is equal to *class1* and it is the destination of the agent. In the command section, the scenario creating one agent with the profile *population* at "MainGate" position.
 
 To launch the example, the following command is needed
