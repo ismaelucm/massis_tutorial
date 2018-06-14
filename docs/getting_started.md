@@ -75,9 +75,16 @@ Now Massis  is installed in the system and the tutorial is ready. To check that 
 > ./LaunchServer.sh
 ```
 
-The first execution takes some minutes to start because the system has to create the navigation meshes and other assets. Wait until the process is finished.
+The first execution takes quite a long time (several minutes) to start because the system has to create the navigation meshes and other assets. Be patient and wait until the process is finished.
+Note that during this first execution, a window appears and only after the system has built all the necessary elements, the animation of the simulation will be displayed. This first example shows some people entering in the building and going to some classrooms. Once they are in the classrooms, they stay there. You can stop the simulation with ctrl-C in the terminal window.
 
-During this first execution, a window appears and only after the system has built all the necessary elements, the animation of the simulation will be displayed.
+![FirstExecution](img/FirstMassisSimulation.png)
 
+There are some simple commands to move in the animation window:
+* Q and Z to zoom-in and zoom-out (this can be done also with mouse scrolling).
+* A and D to move to the left and to the right.
+* W and S to move up and down respectively.
+
+Try again to launch the simulation and check that this time it does not take too much time to start.
 
 [back to main](index.md)
