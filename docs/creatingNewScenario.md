@@ -6,7 +6,7 @@
 
 The main directory where the system reads the files that describe the different scenarios for this tutorial is:
 
-```bash
+```
 massis3-examples-server/src/main/resources/simulationExamples/
 ```
 
