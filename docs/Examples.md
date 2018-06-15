@@ -1,4 +1,4 @@
-# Trying several simulation scenarios with MASSIS
+# Examples of simulation scenarios with MASSIS
 
 [back to main](index.md)
 
@@ -65,11 +65,13 @@ The commands section is used to invoke methods on the simulator. These methods c
 
 The tutorial makes uses of several scenarios that are already provided with the MASSIS distribution. These scenarios can be directly executed and serve as  examples to create new ones.
 
-The following examples use as environment the model of the building of our Faculty of Computer Science.
+The following examples use as environment the model of the building of our [Faculty of Computer Science](http://informatica.ucm.es/).
 
 ### Example SimpleExample01.lua
 
-In this simple simulation   one pedestrian is created outside the faculty, and moves to the first classroom. The walk speed of the agent is selected randomly between 1 - 5 and  uses the behaviour *FollowingPath*. This behavior moves the agente through a given path.
+In this simple simulation   one pedestrian is created outside the faculty, and moves to the first classroom. 
+
+The *Scenario* section specifies an   agent profile *populaton* with the behaviour *FollowingPath* and a walk speed that is randomly selected  between 1.0 and 5.0. This behavior moves the agent through a given path to a destination *Class1*.
 
 ```LUA
 Scenario = {
@@ -95,9 +97,9 @@ Commands:
 MassisLua.createHuman("population", 1, "MainGate")
 ```
 
-This scenario describes a behaviour profile named *population* that used the behaviour **FollowingPath** and its speed is a random value between 1 to 5. The parameter path of the behaviour is equal to *class1* and it is the destination of the agent. In the command section, the scenario creating one agent with the profile *population* at "MainGate" position.
+The *Commands* section specifies that the scenario will start with the creation of one agent with the profile *population* at the *MainGate* position.
 
-To launch the example, the following command is needed
+The example can be executed with the following command:
 
 ```bash
 > ./LaunchServer.sh -f SimpleExample01.lua
@@ -105,7 +107,7 @@ To launch the example, the following command is needed
 
 ### Example SimpleExample02.lua
 
-This simulation creates two groups of pedestrians that walk at the first classroom, one of this at the main gate and another at the back. Both walk with random speeds between 1-5. All they use the same behaviour: FollowingPath.
+This simulation creates two groups of pedestrians that walk to the first classroom, one of these start at the main gate and the other at the back of the building. Both walk with random speeds between 1.0 and 5.0. All of them use the same behaviour: *FollowingPath*.
 
 ```LUA
 Scenario = {
@@ -132,10 +134,10 @@ MassisLua.createHuman("population", 20, "MainGate")
 MassisLua.createHuman("population", 20, "BackGate")
 ```
 
-The main difference between the previous example is the number of instantiations. In this case, the method createHuman() instantiate 20 agents at "MainGate" and other 20 instances at "BackGate".
+The main difference between the previous example is the number of instantiations. In this case, the method *createHuman()* instantiates 20 agents at *MainGate* and other 20 instances at *BackGate*.
 
 
-To launch the example, the following command is needed
+The example can be executed with the following command:
 
 ```bash
 > ./LaunchServer.sh -f SimpleExample02.lua
@@ -143,7 +145,7 @@ To launch the example, the following command is needed
 
 ### Example EntranceToclass.lua
 
-This simulation creates ten groups of agents, five of them at the main gate and another five at the back gate. All groups walk with different speeds between 1-5. All they use the same behaviour: FollowingPath. Each group have a different classroom as a destination. 
+This simulation creates ten groups of agents, five  at the main gate and the other five at the back gate. All groups walk with different speeds between 1.0 and 5.0. All of them use the same behaviour: *FollowingPath*. Each group has a different classroom as  destination. 
 
 ```LUA
 Scenario = {
@@ -214,7 +216,7 @@ MassisLua.createHuman("Class5", 25, "MainGate")
 MassisLua.createHuman("Class5", 15, "BackGate")
 ```
 
-To launch the example, the following command is needed
+The example can be executed with the following command:
 
 ```bash
 > ./LaunchServer.sh -f EntranceToclass.lua
@@ -222,8 +224,7 @@ To launch the example, the following command is needed
 
 ### Example EntranceToClassDifferentWaves.lua
 
-
-The simulation has two agent waves. In the first wave, the simulation creates twelve groups of agents, six of them in the main gate and another six in the back gate. Each group have a different classroom as a destination. The second wave is the same as the first wave but start 50 seconds later. All they use the behaviour FollowingPath.
+This simulation has two agent waves. The first wave consists of twelve groups of agents, six of them are created at the main gate and other six at the back gate. Each group has a different classroom as  destination. The second wave is the same as the first wave but starts 50 seconds later. All of them use the behaviour *FollowingPath*.
 
 
 ```LUA
@@ -319,9 +320,9 @@ MassisLua.createHumanDeferred("Cafeteria", 10, "MainGate", 50)
 MassisLua.createHumanDeferred("Cafeteria", 10, "BackGate", 50)
 ```
 
-We have used the command *createHumanDeferred* creating agents with a delay (50 seconds in this case). This allows the second wave of agents.
+We have used the command *createHumanDeferred* to create agents with a delay (50 seconds in this case). This allows the second wave of agents.
 
-To launch the example, the following command is needed
+The example can be executed with the following command:
 
 ```bash
 > ./LaunchServer.sh -f EntranceToClassDifferentWaves.lua
@@ -330,10 +331,10 @@ To launch the example, the following command is needed
 
 ### Example Evacuation.lua
 
-The simulation simulates an evacuation of the five classrooms. The path will follow the agents is set in the profiled. 
-* The profilers: Class1, Class2 and Class3, are evacuated through the main door.
-* The profilers: Class4 and Class5, are evacuated through the back door.
-* The profiler Cafeteria is evacuated through the main door.
+This example shows an evacuation of the five classrooms. The path that the agents will follow  is defined with the profiles:
+* The profiles Class1, Class2 and Class3  are evacuated through the main door.
+* The profiles Class4 and Class5  are evacuated through the back door.
+* The profile  Cafeteria is evacuated through the main door.
 
 
 ```LUA
@@ -410,9 +411,9 @@ MassisLua.createHuman("Class5", 30, "Class5")
 MassisLua.createHuman("Cafeteria", 30, "ProfessorsCafeteria")
 ```
 
-We have used a guided path that the agents must follow. For each profile, the path change. 
+In this example the agents are following  a guided path, which changes for each profile. 
 
-To launch the example, the following command is needed
+The example can be executed with the following command:
 
 ```bash
 > ./LaunchServer.sh -f Evacuation.lua
