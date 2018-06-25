@@ -80,9 +80,10 @@ The server allows visualizing the simulation using a web API. If you type the fo
 
 ```
 http://localhost:8080/api/simulations/0/environment/camera/0/video
+
 ```
 
-![Example of streaming video](img/streaming_video_example.png "Streaming video example")
+![Example of streaming video](img/streaming_video_example.png)
 
 
 ### Creating a example with multiple web cameras
@@ -90,6 +91,7 @@ http://localhost:8080/api/simulations/0/environment/camera/0/video
 There is a scenario example that using multiple web cameras. Open the scenario MultipleWebCamera.lua. 
 
 ```LUA
+
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {{
@@ -110,9 +112,7 @@ Scenario = {
                         location = {48.18943, 7.921671, 39.804356},
                         rotation = {-8.420923,84.17573,-3.841981E-6},
                         lookAt = {48.18943,7.921671,39.804356}
-                    }}
-
-,
+                    }},
     AgentsDescriptions = {
         Class1 = {
             behavior = "FollowingPath",
@@ -181,22 +181,25 @@ In the section *CameraConfig* there are a set of four cameras configured. The fi
 
 ```
 http://localhost:8080/api/simulations/0/environment/cameraweb
+
 ```
 
 To test the example, shutdown the current simulation (Control+c) and launch the following command:
 
 ```bash
 > ./LaunchServer.sh -f MultipleWebCamera.lua
+
 ```
 
 Next, yo consult the cameras with the following commando in your web browser:
 
 ```
 http://localhost:8080/api/simulations/0/environment/cameraweb
+
 ```
 
 The result must be something like this image shown below:
 
 
-![Example of multiple web cameras](img/MultipleWebCameras.png "Streaming video with multiple cameras")
+![Example of multiple web cameras](img/MultipleWebCameras.png)
 
