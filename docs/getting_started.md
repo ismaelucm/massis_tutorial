@@ -6,14 +6,14 @@ MASSIS has been created using [Maven](https://maven.apache.org/) and [Java 8](ht
 
 Maven can be installed from here: [https://maven.apache.org/install.html](https://maven.apache.org/install.html)
 
-The tool has an installation assistant to help in the installation process. The installer using python. To check whether python is installed
+The tool has an installation assistant for the examples, which is written in Python. To check whether Python is installed, use the following command:
 
 ```bash
 > python3 --version
 Python 3.5.2
 
 ```
-If python is not installed in your system, you can install it with the following commands:
+If Python is not installed in your Linux system, you can do it with the following commands:
 
 ```bash
 > sudo apt-get update
@@ -35,17 +35,19 @@ It is advisable to have installed the [Ogg](https://xiph.org/ogg/) libraries on 
 
 ## Installation
 
-To install Massis,  clone the following repositories:
+To install Massis,  clone the following repositories (one for the Massis core, and another for the assets, i.e., animations, models and scenes):
 
 ```bash
 > git clone asset repository
 > git clone core repository
+```
+Then for the tutorial you will need the following:
+
+```bash
 > git clone https://github.com/ismaelucm/massis_tutorial.git
 ```
 
-The first project is the core Massis system and the second proyect has the examples for this tutorial.
-
-Move into massis3-4 directory and  compile the project using Maven:
+Move into *massis3-4* directory and  compile the project using Maven:
 
 ```bash
 > cd massis3-4
@@ -53,14 +55,20 @@ Move into massis3-4 directory and  compile the project using Maven:
 > mvn install
 ```
 
-Next change to the directory massis3-examples and  compile de example project using the python command install.py and following the instructions to configure the server:
+Next, change to the directory *massis3-examples* and  compile de example project using the Python script `install.py`:
 
 ```bash
 > cd massis3-examples
 > python3 install.py
 ```
+This installation requires to provide some data for configuration of the server for the simulations:
+* host_ip=127.0.0.1
+* host_port=8080  (or other not in use)
+* host_path=/home/xxx/xxx/massis3-assets/  (the directory where the massis3-assets where extracted from the zip file)
 
-Now Massis is installed in the system. To check that everything is working properly, being in the massis3-examples directory, try to  launch the ''hello world'' simulation:
+## Test installation with first execution
+
+Now Massis  is installed in the system and the tutorial is ready. To check that everything is working properly, being in the *massis3-examples* directory, try to  launch one simulation:
 
 
 ```bash
@@ -69,7 +77,17 @@ Now Massis is installed in the system. To check that everything is working prope
 > ./LaunchServer.sh
 ```
 
-The first execution takes some minutes to start because the system has to create the navigation meshes and other assets. Wait until the process is finished.
+The first execution takes quite a long time (several minutes) to start because the system has to create the navigation meshes and other assets, and this requires  a considerable number of calculations. Be patient and wait until the process is finished, this will be only once.
+Note that during this first execution, a window appears and only after the system has built all the necessary elements, the animation of the simulation will be displayed. This first example shows some people entering in the building and going to some classrooms. Once they are in the classrooms, they stay there. You can stop the simulation with ctrl-C in the terminal window.
+
+![FirstExecution](img/FirstMassisSimulation.png)
+
+There are some simple commands to move in the animation window:
+* Q and Z to zoom-in and zoom-out (this can be done also with mouse scrolling).
+* A and D to move to the left and to the right.
+* W and S to move up and down respectively.
+
+Try again to launch the simulation and check that this time it does not take too much time to start.
 
 [Back to main](index.md)
 [Next](Examples.md)

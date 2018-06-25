@@ -2,32 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f91a6e3-38d7-4a57-aebf-2c29fedd56a8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_all_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_i686_apple_darwin12_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_i686_pc_linux_gnu6_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_i686_w64_mingw32_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_x86_64_apple_darwin12_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_x86_64_pc_linux_gnu6_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_arch_x86_64_w64_mingw32_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_humble_humble_video_noarch_0_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jcodec_jcodec_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jcodec_jcodec_javase_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jcodec_jcodec_streaming_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaunchServer.sh" afterPath="$PROJECT_DIR$/LaunchServer.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Examples.md" afterPath="$PROJECT_DIR$/docs/Examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/creatingNewBehavior.md" afterPath="$PROJECT_DIR$/docs/creatingNewBehavior.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/creatingNewScenario.md" afterPath="$PROJECT_DIR$/docs/creatingNewScenario.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/getting_started.md" afterPath="$PROJECT_DIR$/docs/getting_started.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.md" afterPath="$PROJECT_DIR$/docs/index.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties" afterPath="$PROJECT_DIR$/massis3-examples-server/profiles/dev/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/profiles/prod/config.properties" afterPath="$PROJECT_DIR$/massis3-examples-server/profiles/prod/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EvacuationWithVariableSpeed.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EvacuationWithVariableSpeed.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SimpleExample01.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SimpleExample01.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SimpleExample02.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SimpleExample02.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples.iml" afterPath="$PROJECT_DIR$/massis3-examples.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/massis3-examples-navmesh/target/" />
     <ignored path="$PROJECT_DIR$/massis3-examples-utils/target/" />
@@ -57,8 +37,15 @@
         <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-              <folding />
+              <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+              <folding>
+                <element signature="e#6331#6339#0" expanded="true" />
+                <element signature="e#6561#6569#0" expanded="true" />
+                <element signature="e#6631#6640#0" expanded="true" />
+                <element signature="e#7676#7684#0" expanded="true" />
+                <element signature="e#9447#9455#0" expanded="true" />
+                <element signature="e#9497#9506#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -342,12 +329,12 @@
       <workItem from="1529397363123" duration="1806000" />
       <workItem from="1529569494381" duration="1031000" />
       <workItem from="1529655987160" duration="19000" />
-      <workItem from="1529916959443" duration="66000" />
+      <workItem from="1529916959443" duration="732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7963000" />
+    <option name="totallyTimeSpent" value="8629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="17" width="1922" height="1092" extended-state="6" />
@@ -402,7 +389,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6331#6339#0" expanded="true" />
+            <element signature="e#6561#6569#0" expanded="true" />
+            <element signature="e#6631#6640#0" expanded="true" />
+            <element signature="e#7676#7684#0" expanded="true" />
+            <element signature="e#9447#9455#0" expanded="true" />
+            <element signature="e#9497#9506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -410,7 +404,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6331#6339#0" expanded="true" />
+            <element signature="e#6561#6569#0" expanded="true" />
+            <element signature="e#6631#6640#0" expanded="true" />
+            <element signature="e#7676#7684#0" expanded="true" />
+            <element signature="e#9447#9455#0" expanded="true" />
+            <element signature="e#9497#9506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -418,7 +419,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6331#6339#0" expanded="true" />
+            <element signature="e#6561#6569#0" expanded="true" />
+            <element signature="e#6631#6640#0" expanded="true" />
+            <element signature="e#7676#7684#0" expanded="true" />
+            <element signature="e#9447#9455#0" expanded="true" />
+            <element signature="e#9497#9506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -426,7 +434,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6331#6339#0" expanded="true" />
+            <element signature="e#6561#6569#0" expanded="true" />
+            <element signature="e#6631#6640#0" expanded="true" />
+            <element signature="e#7676#7684#0" expanded="true" />
+            <element signature="e#9447#9455#0" expanded="true" />
+            <element signature="e#9497#9506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -440,8 +455,15 @@
     <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-          <folding />
+          <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+          <folding>
+            <element signature="e#6331#6339#0" expanded="true" />
+            <element signature="e#6561#6569#0" expanded="true" />
+            <element signature="e#6631#6640#0" expanded="true" />
+            <element signature="e#7676#7684#0" expanded="true" />
+            <element signature="e#9447#9455#0" expanded="true" />
+            <element signature="e#9497#9506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
