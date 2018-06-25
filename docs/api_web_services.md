@@ -89,7 +89,7 @@ http://localhost:8080/api/simulations/0/environment/camera/0/video
 
 There is a scenario example that using multiple web cameras. Open the scenario MultipleWebCamera.lua. 
 
-```lua
+```LUA
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {{
@@ -110,11 +110,71 @@ Scenario = {
                         location = {48.18943, 7.921671, 39.804356},
                         rotation = {-8.420923,84.17573,-3.841981E-6},
                         lookAt = {48.18943,7.921671,39.804356}
-                    }},
+                    }}
+
+,
     AgentsDescriptions = {
-        
+        Class1 = {
+            behavior = "FollowingPath",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class1"
+            }
+        },
+        Class2 = {
+            behavior = "FollowingPath",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class2"
+            }
+        },
+        Class3 = {
+            behavior = "FollowingPath",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class3"
+            }
+        },
+        Class4 = {
+            behavior = "FollowingPath",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class4"
+            }
+        },
+        Class5 = {
+            behavior = "FollowingPath",
+            SpeedMin = 1.0,
+            SpeedMax = 5.0,
+            AnimationSpeedReference = 4.0,
+            RewriteParameter = {
+                Path = "Class5"
+            }
+        }
     }
 }
+
+Commands:
+
+MassisLua.createHuman("Class1", 25, "MainGate")
+MassisLua.createHuman("Class1", 25, "BackGate")
+MassisLua.createHuman("Class2", 20, "MainGate")
+MassisLua.createHuman("Class2", 20, "BackGate")
+MassisLua.createHuman("Class3", 15, "MainGate")
+MassisLua.createHuman("Class3", 20, "BackGate")
+MassisLua.createHuman("Class4", 25, "MainGate")
+MassisLua.createHuman("Class4", 20, "BackGate")
+MassisLua.createHuman("Class5", 25, "MainGate")
+MassisLua.createHuman("Class5", 15, "BackGate")
+
 ```
 
 In the section *CameraConfig* there are a set of four cameras configured. The first camera is the main camera used in the local render by default. The rest of the cameras are available on the web API using the following command:
