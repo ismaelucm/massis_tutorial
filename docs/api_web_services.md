@@ -94,11 +94,13 @@ There is a scenario example that using multiple web cameras. Open the scenario M
 
 Scenario = {
     Scene="Faculty_1floor",
-    CameraConfig = {{
+    CameraConfig = {
+                    {
                         location = { 33.0, 50.0, 54.0 },
                         rotation = { 90.0, 0.0, 0.0 },
                         lookAt = { 0.0, 0.0, 0.0 }
-                    }, {
+                    }, 
+                    {
                         location = {90.75225, 26.890236, 25.397486},
                         rotation = {41.377083,0.5595291,1.6008256E-7},
                         lookAt = {90.75225,26.890236,25.397486}
@@ -112,7 +114,8 @@ Scenario = {
                         location = {48.18943, 7.921671, 39.804356},
                         rotation = {-8.420923,84.17573,-3.841981E-6},
                         lookAt = {48.18943,7.921671,39.804356}
-                    }},
+                    }
+                    },
     AgentsDescriptions = {
         Class1 = {
             behavior = "FollowingPath",
