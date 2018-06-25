@@ -67,7 +67,7 @@ public class LaunchServer {
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua";
             //args[1] = "SuspectBehaviorExample.lua";
 
         }

@@ -82,6 +82,9 @@ Note that during this first execution, a window appears and only after the syste
 
 ![FirstExecution](img/FirstMassisSimulation.png)
 
+
+## Camera controlling
+
 There are some simple commands to move in the animation window:
 * Q and Z to zoom-in and zoom-out (this can be done also with mouse scrolling).
 * A and D to move to the left and to the right.
