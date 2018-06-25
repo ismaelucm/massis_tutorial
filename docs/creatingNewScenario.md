@@ -83,9 +83,9 @@ There are several behaviours pre-made in MASSIS in the directory *massis3-exampl
 * SecurityBehavior.bh
 * ThiefBehavior.bh
 
-In this example we selected FollowingPathBehavior. If you open the behavior, you must see the name of the behavior in the attribute Name. In this case the name is "FollowingPath".
+In this example we selected FollowingPathBehavior. If you open the behaviour, you must see the name of the behaviour in the attribute Name. In this case, the name is "FollowingPath".
 
-Set the name variable behavior set behavior = "FollowingPath". Configure the SpeedMin and SpeedMax as you want and set the AnimationSpeedReference = 4.0 (See code example). Finally in RewriteParameter set the variable Path to "Class1".
+Set the name variable behaviour set behavior = "FollowingPath". Configure the SpeedMin and SpeedMax as you want and set the AnimationSpeedReference = 4.0 (See code example). Finally in RewriteParameter set the variable Path to "Class1".
 
 ```LUA
 Scenario = {
@@ -116,6 +116,7 @@ Now is the time to create our first agent. In the command section we write the c
 Commands:
 MassisLua.createHuman("ReturnToClass", 1, "StudentsCafeteria")
 ```
+
 This command creates an agent at the "StudentsCafeteria" position (at the centre of this area) with the behaviour "ReturnToClass". When the simulation is launched, we can see the agent instantiated in the students' cafeteria, walking to the classroom 1. The path that connects the cafeteria with the classroom is obtained automatically by the system.
 
 
@@ -127,6 +128,7 @@ Now is the time to create our first agent. In the command section we write the c
 Commands:
 MassisLua.createHuman("ReturnToClass", 1, "StudentsCafeteria")
 ```
+
 This command creates an agent at the "StudentsCafeteria" position (at the centre of this area) with the behaviour "ReturnToClass". When the simulation is launched, we can see the agent instantiated in the students' cafeteria, walking to the classroom 1. The path that connects the cafeteria with the classroom is obtained automatically by the system.
 
 

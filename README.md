@@ -30,7 +30,7 @@ To run demos
 -------------
 To know which simulations are available
 
-	LaunchServer.sh -l
+	sh LaunchServer.sh -l
 
 There exist two simulations predefined:
 
@@ -39,13 +39,13 @@ There exist two simulations predefined:
 
 To launch either of these:
 
-	LaunchServer.sh -s Faculty_1floor
-	LaunchServer.sh -s EnterToClassFaculty_1floor
+	sh LaunchServer.sh -s Faculty_1floor
+	sh LaunchServer.sh -s EnterToClassFaculty_1floor
 
 New simulations can be programmed and instructions will be given in othe sections of this README.
 It is possible too 
 
-	LaunchServer.sh -f <file_human_description_lua>
+	sh LaunchServer.sh -f <file_human_description_lua>
 
 Where <file_human_description_lua> is a file where the user can describe different human population profiles to include in the simulation. Exist the following examples of this file in the directory simulationExamples:
 
@@ -53,27 +53,34 @@ Where <file_human_description_lua> is a file where the user can describe differe
 
 To run this example
 
-	LaunchServer.sh -f SimpleExample01.lua
+	sh LaunchServer.sh -f SimpleExample01.lua
 	
 * SimpleExample02.lua: This simulation creates two groups of pedestrian, one of then in the main gate and another in the back gate. Both walking with different speeds between 1-5 and with the destination at the first classroom.
 
  To run this example:
 
-	LaunchServer.sh -f SimpleExample02.lua
+	sh LaunchServer.sh -f SimpleExample02.lua
+
+This is one of the multicamera setups. You can see other cameras at:
+
+	http://localhost:8080/api/simulations/0/environment/cameraweb
 
 * EntranceToclass.lua: This simulation creates ten groups of pedestrian, five of them in the main gate and another five in the back gate. All groups walking with different speeds between 1-5 and with the destination at the different classrooms.
 All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f EntranceToclass.lua
+	sh LaunchServer.sh -f EntranceToclass.lua
 
+This is one of the multicamera setups. You can see other cameras at:
+
+	http://localhost:8080/api/simulations/0/environment/cameraweb
 
 * EntranceToClassDifferentWaves.lua: The simulation has two pedestrian waves. In the first wave, the simulation creates twelve groups of pedestrian, six of them in the main gate and another six in the back gate. All groups walking with different speeds between 1-5 and with the destination at the different classrooms and the cafeteria. The second wave is the same of the first wave, but start 50 seconds after. All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f EntranceToClassDifferentWaves.lua
+	sh LaunchServer.sh -f EntranceToClassDifferentWaves.lua
 
 * Evacuation.lua: The simulation simulates an evacuation of the five classrooms. The path to follow has been determined in the simulation.
 	* The populations Aula1, Aula2, Aula3 are evacuated through the main door
@@ -83,7 +90,7 @@ All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f Evacuation.lua
+	sh LaunchServer.sh -f EvacuationWithVariableSpeed.lua
 
 * SecurityThief.lua: The simulation has three profiles: Victims, Thief and Security. 
 	* The security patrolling around the hall.
@@ -93,12 +100,12 @@ All they using the behavior FollowingPath
 
  To run this example:
 
-	LaunchServer.sh -f SecurityThief.lua
+	sh LaunchServer.sh -f SecurityThief.lua
 
 
 To show the help you must run the following command:
 
-	LaunchServer.sh -h
+	sh LaunchServer.sh -h
 
 To developing new demos or modify the existing.
 -----------------------------------------------
@@ -171,7 +178,7 @@ To consult the information of an single human
 To get the behavior description of the human you can run the following command:
 
 
-	get http://localhost:60000/api/simulations/0/human-agent/behavior-description/[behaviorName]/
+	get http://localhost:8080/api/simulations/0/human-agent/behavior-description/[behaviorName]/
 
 where: 
 
@@ -180,15 +187,15 @@ where:
 
 To get the camera ids available in the simulation
 
-	http://localhost:60000/api/simulations/0/environment/cameraIds
+	http://localhost:8080/api/simulations/0/environment/cameraIds
 
 URL to access the simulation via a dashboard. The user is presented a div with all available cameras
 
-	http://localhost:60000/api/simulations/0/environment/cameraweb
+	http://localhost:8080/api/simulations/0/environment/cameraweb
 
 Streaming the video of the simulation in MJPEG of a particular camera
 
-	http://localhost:60000/api/simulations/0/environment/camera/0/video
+	http://localhost:8080/api/simulations/0/environment/camera/0/video
 
 LUA syntax
 -------------
@@ -200,8 +207,34 @@ A lua file has the following syntax
 	 Agentdescription
 	 Commands
  
+Camera config can be single or multiple. When single, the camera config has three attributes: its location, the rotation of the camera and where it is looking at.
+To facilitate creating new cameras correctly oriented, you can use the mouse and keyboard (q+z+a+s+w+d) to operate the camera, and then press "c". The console will display current location,rotation, and lookat values that you can reuse. Read the tutorial for more details.
 
-The VideoConfig is
+	CameraConfig= {
+		location = { 61.0, 100.0, 40.0 },
+		rotation = { 90.0, 0.0, 0.0 },
+		lookAt = { 61.0, 0.0, 40.0 }
+		}
+
+For multiple cameras, add an additional curly braces. The first declared camera is the main camera.
+
+	CameraConfig=  {{
+				location = { 61.0, 100.0, 40.0 },
+				rotation = { 90.0, 0.0, 0.0 },
+				lookAt = { 61.0, 0.0, 40.0 }
+			}, 
+			{
+				location = { 61.0, 100.0, 40.0 },
+				rotation = { 90.0, 0.0, 0.0 },
+				lookAt = { 61.0, 0.0, 40.0 }
+			}
+			}
+
+The created cameras should be accesible from :
+
+	http://localhost:8080/api/simulations/0/environment/cameraweb
+
+The VideoConfig syntax is
 
 	VideoConfig={
 		filename="output_video_filename_path.flv",
@@ -209,7 +242,7 @@ The VideoConfig is
 		duration="seconds of the simulation to record",
 	},
 
-The file with the video is coded as a flv container with H264 codec. The internal format is FLV to get wider acceptance. Due to some issues, the recorded video is still not of the same duration, but an accelerated version of the same simulation duration.
+The file with the video is coded as a flv container with H264 codec. The internal format is FLV to get wider acceptance. Due to some issues, the recorded video is still not of the same duration, but an accelerated version of the same simulation duration. It will use as input the main camera.
 
 Trouble shooting
 --------------------
@@ -301,4 +334,3 @@ It takes too long to launch, and it shows weird messages such as
 	WARNING: Colinear uv coordinates for triangle [17, 18, 19]; tex0 = [1, 1], tex1 = [1, 1], tex2 = [0, 1]
 
 The program uses originally sweet home 3D files that need to be converted to massis format (JMonkey with the appropriate additional files). This requires a compilation of the assets that may take from 2 to 5 minutes in a core i7. You can check $HOME/.massis/assets and watch as the new files are created. This happens only once,unless you modify one of the sweet home 3D files.
-

@@ -4,10 +4,16 @@
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {
+{
+		location = {78.28518, 15.088421, 17.921297},
+		rotation = {21.01045,-0.05595299,-5.00258E-9},
+		lookAt = {78.28518,15.088421,17.921297}
+		},
+	{
         location = { 85.0, 100.0, 54.0 },
         rotation = { 90.0, 0.0, 0.0 },
         lookAt = { 85.0, 0.0, 54.0 }
-    },
+    	}},
     AgentsDescriptions = {
         population = {
             behavior = "FollowingPath",
