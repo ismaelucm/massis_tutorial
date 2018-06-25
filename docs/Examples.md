@@ -417,4 +417,5 @@ To launch the example, the following command is needed
 > ./LaunchServer.sh -f Evacuation.lua
 ```
 
-[back to main](index.md)
+[Back to main](index.md)
+[Next](creatingNewScenario.md)

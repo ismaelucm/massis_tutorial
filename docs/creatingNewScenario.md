@@ -132,4 +132,5 @@ MassisLua.createHuman("ReturnToClass", 1, "StudentsCafeteria")
 This command creates an agent at the "StudentsCafeteria" position (at the centre of this area) with the behaviour "ReturnToClass". When the simulation is launched, we can see the agent instantiated in the students' cafeteria, walking to the classroom 1. The path that connects the cafeteria with the classroom is obtained automatically by the system.
 
 
-[back to main](index.md)
+[Back to main](index.md)
+[Next](creatingNewBehavior.md)

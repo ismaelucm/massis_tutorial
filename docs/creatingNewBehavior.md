@@ -342,4 +342,4 @@ Save the scenario as testBehavior.lua and launch:
 >./LaunchServer.sh -f testBehavior.lua
 ```
 
-[back to main](index.md)
+[Back to main](index.md)

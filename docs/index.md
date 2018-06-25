@@ -39,6 +39,10 @@ This tutorial shows, step by step, the process to create MASSIS simulations,  fr
 * [Some examples](Examples.md)
 * [Creating new scenarios](creatingNewScenario.md)
 * [Creating new behaviors](creatingNewBehavior.md)
+* API web services:
+    * [Creating new behaviors](api_web_services.md)
+* Creating new environments:
+    * [Creating new behaviors](creatingNewBehavior.md)
 * Appendix:
     * [Actions:](appendix_actions.md)
     * [Conditions:](appendix_conditions.md)
