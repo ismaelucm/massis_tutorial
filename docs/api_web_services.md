@@ -115,6 +115,7 @@ Scenario = {
 ,
     AgentsDescriptions = {
   ...}
+}
 ```
 
 In the section *CameraConfig* there are a set of four cameras configured. The first camera is the main camera used in the local render by default. The rest of the cameras are available on the web API using the following command:
