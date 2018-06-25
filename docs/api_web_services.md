@@ -89,7 +89,7 @@ http://localhost:8080/api/simulations/0/environment/camera/0/video
 
 There is a scenario example that using multiple web cameras. Open the scenario MultipleWebCamera.lua. 
 
-```bash
+```lua
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {{
@@ -110,11 +110,8 @@ Scenario = {
                         location = {48.18943, 7.921671, 39.804356},
                         rotation = {-8.420923,84.17573,-3.841981E-6},
                         lookAt = {48.18943,7.921671,39.804356}
-                    }}
-
-,
-    AgentsDescriptions = {
-  ...}
+                    }},
+    AgentsDescriptions = {}
 }
 ```
 
