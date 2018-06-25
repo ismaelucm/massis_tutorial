@@ -111,7 +111,9 @@ Scenario = {
                         rotation = {-8.420923,84.17573,-3.841981E-6},
                         lookAt = {48.18943,7.921671,39.804356}
                     }},
-    AgentsDescriptions = {}
+    AgentsDescriptions = {
+        
+    }
 }
 ```
 
