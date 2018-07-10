@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f91a6e3-38d7-4a57-aebf-2c29fedd56a8" name="Default" comment="" />
+    <list default="true" id="2f91a6e3-38d7-4a57-aebf-2c29fedd56a8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Examples.md" afterPath="$PROJECT_DIR$/docs/Examples.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua" afterPath="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua" />
+    </list>
     <ignored path="$PROJECT_DIR$/massis3-examples-navmesh/target/" />
     <ignored path="$PROJECT_DIR$/massis3-examples-utils/target/" />
     <ignored path="$PROJECT_DIR$/massis3-examples-server/target/" />
@@ -26,58 +32,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Motor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Motor/Motor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1962">
+              <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollisionAvoidanceAgent.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/CollisionAvoidanceAgent.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-281">
+              <caret line="166" column="40" lean-forward="false" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LaunchServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="69" column="106" lean-forward="false" selection-start-line="69" selection-start-column="106" selection-end-line="69" selection-end-column="106" />
+            <state relative-caret-position="216">
+              <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
               <folding>
-                <element signature="e#6333#6341#0" expanded="true" />
-                <element signature="e#6563#6571#0" expanded="true" />
-                <element signature="e#6633#6642#0" expanded="true" />
-                <element signature="e#7678#7686#0" expanded="true" />
-                <element signature="e#9449#9457#0" expanded="true" />
-                <element signature="e#9499#9508#0" expanded="true" />
+                <element signature="e#6329#6337#0" expanded="true" />
+                <element signature="e#6559#6567#0" expanded="true" />
+                <element signature="e#6629#6638#0" expanded="true" />
+                <element signature="e#7674#7682#0" expanded="true" />
+                <element signature="e#9445#9453#0" expanded="true" />
+                <element signature="e#9495#9504#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntranceToclass.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua">
+      <file leaf-file-name="MoveToAgent.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/MoveToAgent.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-663">
-              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="132">
+              <caret line="204" column="65" lean-forward="false" selection-start-line="204" selection-start-column="65" selection-end-line="204" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipleWebCamera.lua" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua">
+      <file leaf-file-name="FSM.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/behaviorframework/1.0-SNAPSHOT/behaviorframework-1.0-SNAPSHOT.jar!/con/behaviorframework/core/Behaviors/FSM/FSM.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="91" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HumanController.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/http/controllers/HumanController.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnvironmentServiceImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/EnvironmentServiceImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="189" column="9" lean-forward="false" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+            <state relative-caret-position="223">
+              <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,51 +92,52 @@
       <file leaf-file-name="BehaviorSystem.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/Behavior/BehaviorSystem.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1687">
-              <caret line="267" column="34" lean-forward="false" selection-start-line="267" selection-start-column="18" selection-end-line="267" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HumanAgentServiceImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/HumanAgentServiceImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="357" column="9" lean-forward="false" selection-start-line="357" selection-start-column="9" selection-end-line="357" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HumanAgentServiceVertxProxyHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxProxyHandler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HumanAgentServiceVertxEBProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxEBProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MassisAPIResponseImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/web/response/impl/MassisAPIResponseImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
               <folding>
-                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#13520#13521#0" expanded="true" />
+                <element signature="e#13572#13573#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quaternion.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jmonkeyengine/jme3-core/3.1.0-stable/jme3-core-3.1.0-stable-sources.jar!/com/jme3/math/Quaternion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22140">
+              <caret line="1296" column="17" lean-forward="false" selection-start-line="1296" selection-start-column="13" selection-end-line="1296" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SteeringMotor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Motor/SteeringMotor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathHelper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/MathHelper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3204">
+              <caret line="186" column="24" lean-forward="false" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityThief.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,6 +156,25 @@
       <find>HumanController</find>
       <find>allBehaviors</find>
       <find>EntranceToclass</find>
+      <find>_directionUnit</find>
+      <find>this._velocity</find>
+      <find>_velocity</find>
+      <find>v2Module</find>
+      <find>calcEvasionForce</find>
+      <find>location</find>
+      <find>position</find>
+      <find>createHumanInArea</find>
+      <find>new Pos</find>
+      <find>new Position</find>
+      <find>new position</find>
+      <find>new po</find>
+      <find>new posi</find>
+      <find>getEvasionForce</find>
+      <find>calcFMagnitude</find>
+      <find>_collisionTime</find>
+      <find>updateVelocityVector</find>
+      <find>updateRotation</find>
+      <find>look</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +192,14 @@
         <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/Behavior/BehaviorSystem.class" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/behaviorframework/1.0-SNAPSHOT/behaviorframework-1.0-SNAPSHOT.jar!/con/behaviorframework/core/Behaviors/FSM/FSM.class" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Motor/Motor.class" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/physics/SimpleGravitySystem.class" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/MathHelper.class" />
+        <option value="$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/CollisionAvoidanceAgent.class" />
         <option value="$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java" />
+        <option value="$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/MoveToAgent.class" />
       </list>
     </option>
   </component>
@@ -193,10 +226,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="17" />
-    <option name="width" value="1922" />
-    <option name="height" value="1064" />
+    <option name="x" value="1919" />
+    <option name="y" value="-11" />
+    <option name="width" value="1602" />
+    <option name="height" value="1212" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,8 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,6 +309,11 @@
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="massis3-4-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3-examples-utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -296,6 +333,104 @@
               <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
               <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
               <item name="massis3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="BehaviorPrimitives" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="BehaviorPrimitives" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="BehaviorPrimitives" type="462c0819:PsiDirectoryNode" />
+              <item name="Conditions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="BehaviorPrimitives" type="462c0819:PsiDirectoryNode" />
+              <item name="Motor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="systems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="systems" type="462c0819:PsiDirectoryNode" />
+              <item name="human" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="systems" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="systems" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.massisframework.massis3:massis3-core:1.0-SNAPSHOT" type="70bed36:NamedLibraryElementNode" />
+              <item name="massis3-core-1.0-SNAPSHOT.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="massis3" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="systems" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="physics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="massis3-4-examples" type="b2602c69:ProjectViewProjectNode" />
@@ -393,7 +528,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -589,42 +725,60 @@
       <workItem from="1529569494381" duration="1031000" />
       <workItem from="1529655987160" duration="19000" />
       <workItem from="1529916959443" duration="1335000" />
-      <workItem from="1529925453615" duration="6538000" />
+      <workItem from="1529925453615" duration="8973000" />
+      <workItem from="1530177717304" duration="3988000" />
+      <workItem from="1530264790716" duration="2494000" />
+      <workItem from="1530536985891" duration="2416000" />
+      <workItem from="1530605520049" duration="21152000" />
+      <workItem from="1530691349691" duration="20959000" />
+      <workItem from="1530789144459" duration="8600000" />
+      <workItem from="1530869100151" duration="4693000" />
+      <workItem from="1530876547575" duration="586000" />
+      <workItem from="1531133084218" duration="7928000" />
+      <workItem from="1531210949353" duration="15275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15770000" />
+    <option name="totallyTimeSpent" value="106296000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
+    <frame x="1919" y="-11" width="1602" height="1212" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3376344" sideWeight="0.4103522" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.4929215" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22666667" sideWeight="0.44208494" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3352381" sideWeight="0.43822393" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.48811412" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376344" sideWeight="0.49786553" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3352381" sideWeight="0.56177604" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31714284" sideWeight="0.4864865" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32150537" sideWeight="0.45731056" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49573106" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22688173" sideWeight="0.45731056" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3376344" sideWeight="0.49786553" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3376344" sideWeight="0.5896478" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31794333" sideWeight="0.49166667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33137673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3623656" sideWeight="0.4850587" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2809524" sideWeight="0.61969113" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -632,6 +786,7 @@
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5118859" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3623656" sideWeight="0.4850587" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,24 +821,72 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/navigation/ClearPathFollowSystem.class</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/ActionHelpers.class</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class</url>
+          <line>214</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class</url>
+          <line>334</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class</url>
+          <line>137</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="144" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxEBProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="6408">
+          <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/web/response/impl/MassisAPIResponseImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -691,14 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,14 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,14 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,14 +915,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -758,57 +936,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxEBProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="6408">
           <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/http/controllers/HumanController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/HumanAgentServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="357" column="9" lean-forward="false" selection-start-line="357" selection-start-column="9" selection-end-line="357" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/EnvironmentServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="189" column="9" lean-forward="false" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxProxyHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/Behavior/BehaviorSystem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1687">
-          <caret line="267" column="34" lean-forward="false" selection-start-line="267" selection-start-column="18" selection-end-line="267" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,39 +951,312 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="78">
             <caret line="145" column="12" lean-forward="false" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/CrowdBehaviors/Thief.bh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/EntranceToclass.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="486">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/http/controllers/HumanController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/EnvironmentServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2538">
+          <caret line="189" column="9" lean-forward="false" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-services/1.0-SNAPSHOT/massis3-services-1.0-SNAPSHOT.jar!/com/massisframework/massis3/services/eventbus/sim/HumanAgentServiceVertxProxyHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4932">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jmonkeyengine/jme3-core/3.1.0-stable/jme3-core-3.1.0-stable-sources.jar!/com/jme3/bounding/BoundingBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/MovementAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/Facing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/Human.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/Model3DInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/Mass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/ExtentsComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/ecs/DefaultEntityDataModifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/MassisActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/navigation/CellPathDirectionSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="53" column="49" lean-forward="false" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/navigation/ClearPathFollowSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/ActionHelpers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/SceneWireUpAppSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/ecs/EntityComponentAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/ecs/ECSEnforcedEntityQueryAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/simsilica/zay-es/1.2.1/zay-es-1.2.1-sources.jar!/com/simsilica/es/base/DefaultEntityData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="143" column="41" lean-forward="false" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/simulation/server/eventbus/services/HumanAgentServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="74" column="44" lean-forward="false" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/control/human/HumanControlSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2916">
+          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/engine/physics/SimpleGravitySystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/components/Position.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#2678#2679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Motor/Motor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1962">
+          <caret line="120" column="52" lean-forward="false" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Motor/SteeringMotor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jmonkeyengine/jme3-core/3.1.0-stable/jme3-core-3.1.0-stable-sources.jar!/com/jme3/math/Quaternion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22140">
+          <caret line="1296" column="17" lean-forward="false" selection-start-line="1296" selection-start-column="13" selection-end-line="1296" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/MathHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3204">
+          <caret line="186" column="24" lean-forward="false" selection-start-line="186" selection-start-column="24" selection-end-line="186" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-utils/1.0-SNAPSHOT/massis3-utils-1.0-SNAPSHOT.jar!/com/massisframework/massis3/CollisionAvoidanceAgent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="166" column="40" lean-forward="false" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/java/com/massisframework/massis3/examples/simulation/LaunchServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="69" column="106" lean-forward="false" selection-start-line="69" selection-start-column="106" selection-end-line="69" selection-end-column="106" />
+        <state relative-caret-position="216">
+          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding>
-            <element signature="e#6333#6341#0" expanded="true" />
-            <element signature="e#6563#6571#0" expanded="true" />
-            <element signature="e#6633#6642#0" expanded="true" />
-            <element signature="e#7678#7686#0" expanded="true" />
-            <element signature="e#9449#9457#0" expanded="true" />
-            <element signature="e#9499#9508#0" expanded="true" />
+            <element signature="e#6329#6337#0" expanded="true" />
+            <element signature="e#6559#6567#0" expanded="true" />
+            <element signature="e#6629#6638#0" expanded="true" />
+            <element signature="e#7674#7682#0" expanded="true" />
+            <element signature="e#9445#9453#0" expanded="true" />
+            <element signature="e#9495#9504#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/systems/Behavior/BehaviorSystem.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="91" selection-end-column="47" />
+        <state relative-caret-position="223">
+          <caret line="129" column="43" lean-forward="false" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+          <folding>
+            <element signature="e#13520#13521#0" expanded="true" />
+            <element signature="e#13572#13573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/behaviorframework/1.0-SNAPSHOT/behaviorframework-1.0-SNAPSHOT.jar!/con/behaviorframework/core/Behaviors/FSM/FSM.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/massisframework/massis3/massis3-core/1.0-SNAPSHOT/massis3-core-1.0-SNAPSHOT.jar!/com/massisframework/massis3/core/BehaviorPrimitives/Actions/MoveToAgent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="204" column="65" lean-forward="false" selection-start-line="204" selection-start-column="65" selection-end-line="204" selection-end-column="65" />
           <folding />
         </state>
       </provider>

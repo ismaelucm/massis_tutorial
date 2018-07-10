@@ -63,11 +63,11 @@ public class LaunchServer {
             //args[1] = "EnterToClassFaculty_1floor";
             // Si queremos crear pruebas rápidas, descomentar...
             args[0] = "-f";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/testBehavior.lua";
-            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/testBehavior.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/MultipleWebCamera.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua";
             //args[1] = "SuspectBehaviorExample.lua";
 
         }

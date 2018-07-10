@@ -419,9 +419,5 @@ The example can be executed with the following command:
 > ./LaunchServer.sh -f Evacuation.lua
 ```
 
-<<<<<<< HEAD
 [Back to main](index.md)
 [Next](creatingNewScenario.md)
-=======
-[back to main](index.md)
->>>>>>> 7aa40aed4cef7b88b29409ade2c2af1d056b6199

@@ -6,7 +6,7 @@
 Scenario = {
     Scene="Faculty_1floor",
     CameraConfig = {
-        location = { 100.0, 40.0, 56.0 },
+        location = { 100.0, 140.0, 56.0 },
         rotation = {    90.0, 0.0, 0.0 },
         lookAt = { 100.0, 0.0, 56.0 }
     },
@@ -25,12 +25,21 @@ Scenario = {
                 }
             }
         },
-        Victims = {
+        Victims01 = {
             behavior = "FollowingPathAgent",
             Speed = 2.0,
             tag = "Victims",
             RewriteParameter = {
                 Path = "MainHall.Entrance,MainHall.Library,LobbyEventRoom.Hall,ClassesLobby.Class1,ElevatorsLobby,CafeteriaHall",
+                IsCircularPath = true
+            }
+        },
+        Victims02 = {
+            behavior = "FollowingPathAgent",
+            Speed = 2.0,
+            tag = "Victims",
+            RewriteParameter = {
+                Path = "ElevatorsLobby,ClassesLobby.Class1,LobbyEventRoom.Hall,MainHall.Library,MainHall.Entrance,MainGate",
                 IsCircularPath = true
             }
         },
@@ -55,5 +64,6 @@ Scenario = {
 Commands:
 
 --MassisLua.createHumanDeferred("Thief",1,"MainGate",20)
-MassisLua.createHuman("Victims", 30, "MainGate")
+MassisLua.createHuman("Victims01", 50, "MainGate")
+MassisLua.createHuman("Victims02", 50, "CafeteriaHall")
 --MassisLua.createHuman("Security",1,"MainHall.Library")
