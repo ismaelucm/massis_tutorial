@@ -10,7 +10,9 @@ Behavior={
         Inputs={
             Path="",
             IsCircularPath=false,
-            Target=""
+            StoppingDistance=0,
+            Target="",
+            LastPositionIsRandom=false
         }
     },
     States={
@@ -20,7 +22,9 @@ Behavior={
             Parameters={
                 Inputs={
                     Path="Blackboard.Path",
-                    Circular="Blackboard.IsCircularPath"
+                    Circular="Blackboard.IsCircularPath",
+                    StoppingDistance="Blackboard.StoppingDistance",
+                    LastPositionIsRandom="Blackboard.LastPositionIsRandom"
                 },
                 Outputs={
                     FinalPosition="Blackboard.Target"
@@ -32,11 +36,24 @@ Behavior={
             Parameters={
                 Inputs={
                     Target="Blackboard.Target",
-                    Animation="walk1"
+                    Animation="walk1",
+                    StoppingDistance="Blackboard.StoppingDistance"
                 }
             }
 
-        }
+        },
+        State2={
+            Action="PlayAnimation",
+            Parameters={
+                Inputs={
+                    Animation="idle"
+                }
+            }
+
+        },
+        State3={
+             Action="WaitForever"
+         }
     },
     Transitions={
         {
@@ -51,8 +68,18 @@ Behavior={
         },
         {
             From="State1",
-            When="ActionFinish",
+            When="ActionSuccess",
             To="State0"
+        },
+        {
+            From="State1",
+            When="ActionFailure",
+            To="State2"
+        },
+        {
+            From="State2",
+            When="ActionFinish",
+            To="State3"
         }
     }
 }

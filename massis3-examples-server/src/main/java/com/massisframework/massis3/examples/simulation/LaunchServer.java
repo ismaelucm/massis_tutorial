@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import com.massisframework.massis3.MathHelper;
 import com.massisframework.massis3.core.config.ScenarioConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,6 +57,8 @@ public class LaunchServer {
         System.out.println("MASSIS LaunchServer start");
         System.out.println("=========================");
         System.out.println("");
+
+
         if (args.length == 0) {
             //configure deault args
             args = new String[2];
@@ -67,7 +70,7 @@ public class LaunchServer {
             args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SecurityThief.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/NewNavigationAlgorithm.lua";
             //args[1] = "SuspectBehaviorExample.lua";
 
         }
@@ -124,6 +127,9 @@ public class LaunchServer {
             }
         }
     }
+
+
+
 
     public static void ShowSimulationsPredefined() {
         List<String> list = PreconfiguredSimulation.getList();
