@@ -87,15 +87,11 @@ There are several built-in behaviours in MASSIS, which are located in the direct
 * SecurityBehavior.bh
 * ThiefBehavior.bh
 
-<<<<<<< HEAD
-In this example we selected FollowingPathBehavior. If you open the behaviour, you must see the name of the behaviour in the attribute Name. In this case, the name is "FollowingPath".
 
-Set the name variable behaviour set behavior = "FollowingPath". Configure the SpeedMin and SpeedMax as you want and set the AnimationSpeedReference = 4.0 (See code example). Finally in RewriteParameter set the variable Path to "Class1".
-=======
 In this example we will work with the *FollowingPathBehavior*. If you open the behavior file, you can see the name of the behavior in the attribute Name, in this case the name is *FollowingPath*, and the description of the behaviour, which in this case is made as a finite state machine (type="FSM") .
 
 Edit the scenario description file and define a profile with the name *ReturnToClass* and set its behavior = "FollowingPath". Configure the SpeedMin and SpeedMax as you want and set the AnimationSpeedReference = 4.0 (See code example). Finally in RewriteParameter set the variable Path to "Class1".
->>>>>>> 7aa40aed4cef7b88b29409ade2c2af1d056b6199
+
 
 ```LUA
 Scenario = {

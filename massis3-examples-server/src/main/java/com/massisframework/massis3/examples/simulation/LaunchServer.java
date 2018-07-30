@@ -70,7 +70,8 @@ public class LaunchServer {
             args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment05.lua";
 
             //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/Experiment04.lua";
-            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/NewNavigationAlgorithm.lua";
+            //args[1] = "massis3-examples-server/src/main/resources/simulationExamples/NewNavigationAlgorithm.lua";
+            args[1] = "massis3-examples-server/src/main/resources/simulationExamples/SpaceStationTutorial.lua";
             //args[1] = "SuspectBehaviorExample.lua";
 
         }

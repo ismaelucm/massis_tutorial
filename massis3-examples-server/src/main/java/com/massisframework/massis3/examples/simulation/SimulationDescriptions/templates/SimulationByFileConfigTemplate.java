@@ -12,10 +12,10 @@ public class SimulationByFileConfigTemplate extends DummySimulationExecutionConf
     @Override
     public SimulationExecutionConfig createSimulationExecutionConfig(List<String> assetsFolder, String scene) {
         //CameraConfig camConfig = CreateCameraConfig();
-        WorldConfig wordConfig = CreateWorld();
+        //WorldConfig wordConfig = CreateWorld();
 
         SimulationExecutionConfig simConfig = new SimulationExecutionConfig()
-                .withWorldConfig(wordConfig)
+                //.withWorldConfig(wordConfig)
                 .withAssetFolders(assetsFolder)
                 .withDebugEnabled(false)
                 .withSceneFile(scene);
