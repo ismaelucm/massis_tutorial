@@ -49,6 +49,7 @@ There is an Appendix with a description of main primitives to define actions, co
 * Part II: Advanced tutorial 
     * [API web service](api_web_services.md)
     * [Creating new environments](creatingNewEnvironments.md)
+    * [Adding new animations](newAnimations.md)
 * Appendix:
     * [Actions](appendix_actions.md)
     * [Conditions](appendix_conditions.md)

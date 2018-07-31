@@ -6,13 +6,20 @@ The system allows adding new environments to be used in the simulations. In this
 
 ## Adding the scene model
 
-To add a new scene we using Sweet Home 3D to create the scene model. In this tutorial we provide the scene already created in the Sweet Home 3D that you can download from **here**.
+To add a new scene we using Sweet Home 3D to create the scene model. In this tutorial we provide the scene already created in the Sweet Home 3D that you can download from [here](resources/tutorial.sh3d)
 
-Next to download it, open the scene using Sweet Home 3D and save in the massis3-assets/Scenes with the name **SpaceStationTutorial.lua**.
+Next to download it, open the scene using Sweet Home 3D, running the class **SweetHome3DEditor.class**. 
 
-In Sweet Home 3D, we are going to edit the name of the rooms. That it is important because it is easier to use names instead of numerical positions to specify agent positions in the scenario. 
+In Sweet Home 3D, we are going to edit the name of the rooms. That it is important because it is easier to use names instead of numerical positions to specify positions of a agent in the scenario. 
 
-We can modify the name of the room doing a double click and type the name in the pop-up window "Modify Rooms". After adding all the room names, save changes and then we will create the scene description in LAU. At first we only describe the scen and the camera position.
+We can modify the name of the room doing a double click and typing the name in the pop-up window "Modify Rooms". After adding all the room names, save changes. The rooms highlighted in the following image must have the names indicated: TLRoomCenter the room 1, TRRoomCenter the room 2, BRRoomCenter the room 3 and BLRoomCenter the room 4.
+
+![FirstExecution](img/SH3D_001.png)
+
+
+## Adding the file that describes the scenario.
+
+Now, we will create the file describes the scenario in LUA. At first, we only define the physical 3D scenario used in the attribute **Scene** and the camera position.
 
 
 ```LUA
@@ -26,23 +33,25 @@ Scenario = {
 }
 ```
 
+Finally, save the scene in massis3-assets/Scenes with the name **SpaceStationTutorial.lua**.
 
-The first time to launch the new scene the system calculate the navmesh automatically. For that reason, the first execution takes more time than the rest.
-
-To test that all is correct, run the escen with the next command:
+To test that all is correct, run the scene with the next command:
 
 ```bash
 > ./LaunchServer.sh -f EntranceToClassDifferentWaves.lua
 ```
 
-Now we are going to create two different human profiles: **Crew** and **Rescuer**. The Crew stay in a room until detect a rescuer. In this moment, the agent follow the rescuer.
+For the first time to launch the new scene, the system calculates the navmesh automatically. For that reason, the first execution takes more time than the rest.
 
-The Rescuer wander arrond the station find the crew agent and finally return to the initial point where is the rescue ship.
+Now we are going to create two different human profiles in the new scenario: **Crew** and **Rescuer**. The Crews stay in a room until detecting a rescuer near them. At this moment, the Crew agent will follow the rescuer detected.
 
+The Rescuer wanders around the station find the crew agent and finally return to the initial point where is the rescue ship.
 
-The bahavior **Crew** has two state. The initial state wait until the state change with the condition **IsCloseTo**. This condition check if the target stay at less distance to indicated in its input parameter.
+The behaviour **Crew** has two states. The initial state (State0) wait until the state change with the condition **IsCloseTo**. This condition checks if the target stays at less distance than the indicated in its input parameter.
 
-The target is selecte with the perception **AgentWithTargetPerception** that select the nearest agent with the tag set in the parameter **Tag**.
+The target is selected by the perception **AgentWithTargetPerception** that choose the nearest agent with the tag set in the parameter **Tag** and put the target into the behaviour's blackboard. The condition **IsCloseTo** reads the target from the blackboard and check if the nearest Rescuer is close enough. In this case, the FSM change the state to State1. This state executes the Chase action whose mission is to chase the target that reads from the blackboard. And finally, the perception **AgentWithTargetPerception** check if exist an agent with a tag set in its parameter **Tag** with a distance less than specified in the parameter **Distance**.
+
+The following behaviour file describes the behaviour Crew previously explained.
 
 ```LUA
 Behavior={
@@ -100,6 +109,8 @@ Behavior={
 }
 ```
 
+With this behaviour create, we can describe both agent profiles: crews and rescuers. The Crew profile uses the behaviour Crew and is tagged as Crew. The rescuer uses the behaviour FollowingPathAgent and the PAth to follow will be: "TLRoomCenter, TRRoomCenter, BRRoomCenter, BLRoomCenter". These agents will be tagged with the tag Rescuer.
+
 ```LUA
 Scenario = {
     Scene="tutorial",
@@ -120,12 +131,18 @@ Scenario = {
             tag = "Rescuer",
             RewriteParameter = {
                 Path = "TLRoomCenter,TRRoomCenter,BRRoomCenter,BLRoomCenter",
-                IsCircularPath = true,
+                IsCircularPath = false,
                 StoppingDistance=4
             }
         }
     }
 }
+
+```
+
+And finally, we create one Crew in each room located in the centre of each square of the space station and create with a deferred time of 5 seconds, the 10 rescuers in the room TLRoomCenter.
+
+```LUA
 
 Commands:
 
@@ -136,3 +153,12 @@ MassisLua.createHuman("Crew", 1, "BLRoomCenter")
 MassisLua.createHumanDeferred("Rescuer", 10, "TLRoomCenter", 5)
 
 ```
+
+
+To test that all is correct, run the scene with the next command:
+
+```bash
+> ./LaunchServer.sh -f EntranceToClassDifferentWaves.lua
+```
+
+![Rescue Tutorial](img/rescue_tutorial.png)
